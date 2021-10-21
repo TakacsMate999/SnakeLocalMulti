@@ -1,2 +1,3 @@
 # SnakeLocalMulti
-Unity témalabor
+
+2D Snake local multiplayer ripoff
