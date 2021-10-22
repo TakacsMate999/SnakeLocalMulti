@@ -21,8 +21,8 @@ public class body_move : MonoBehaviour
         time++;
         if (time % 100 == 0)
         {
-            Position = head_move.Instance.Prev.Position;
-            Rotation = head_move.Instance.Prev.Rotation;
+            Position = head_move.Instance.Curr.Position;
+            Rotation = head_move.Instance.Curr.Rotation;
             gameObject.transform.position = new Vector3(
                 gameObject.transform.position.x + Position.x,
                 gameObject.transform.position.y + Position.y,
