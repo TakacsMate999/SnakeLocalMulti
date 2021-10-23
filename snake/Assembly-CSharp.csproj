@@ -55,14 +55,14 @@
   <ItemGroup>
     <Compile Include="Assets\SimpleEnviroment\Scripts\Storage.cs" />
     <Compile Include="Assets\SimpleEnviroment\Scripts\SceneManager.cs" />
-    <Compile Include="Assets\Head_move.cs" />
-    <Compile Include="Assets\Body_move.cs" />
     <Compile Include="Assets\onstart.cs" />
-    <Compile Include="Assets\snake.cs" />
-    <Compile Include="Assets\Move.cs" />
+    <Compile Include="Assets\Scripts\snake.cs" />
+    <Compile Include="Assets\Scripts\Cell.cs" />
     <Compile Include="Assets\SimpleEnviroment\Scripts\BasicAnimator.cs" />
-    <Compile Include="Assets\Tail_move.cs" />
+    <Compile Include="Assets\Scripts\Tail.cs" />
     <Compile Include="Assets\Helper_scripts\Tags.cs" />
+    <Compile Include="Assets\Scripts\Body_Cell.cs" />
+    <Compile Include="Assets\Scripts\Head.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SimpleEnviroment\Particles\shader\Particle_Add_overlay.shader" />

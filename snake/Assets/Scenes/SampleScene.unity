@@ -564,13 +564,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1717183556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71241630a7f3e4b41a8177ce11b509ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a9dab17c073fca40a1db8b0dfd93ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0, y: 0, z: 0}
+  movement: {x: 0, y: 0, z: 0}
   rotation: {x: -90, y: 0, z: 0}
   segmentPrefab: {fileID: 100000, guid: 92b3a151567b25e4bad56a4edf6b3dd3, type: 3}
-  segmentCount: 5
+  startingSegmentCount: 5
 --- !u!135 &1717183559
 SphereCollider:
   m_ObjectHideFlags: 0
