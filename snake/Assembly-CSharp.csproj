@@ -62,6 +62,7 @@
     <Compile Include="Assets\Move.cs" />
     <Compile Include="Assets\SimpleEnviroment\Scripts\BasicAnimator.cs" />
     <Compile Include="Assets\Tail_move.cs" />
+    <Compile Include="Assets\Helper_scripts\Tags.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SimpleEnviroment\Particles\shader\Particle_Add_overlay.shader" />

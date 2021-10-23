@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using _snake;
+using Assets;
 
 public class Body_move : Move
 {
 
     public Move Source;
-
-    int time = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -16,21 +14,12 @@ public class Body_move : Move
         
     }
 
-    public void Setup(Move source)
-    {
-        Source = source;
-    }
-
     // Update is called once per frame
     override
-    protected void Update()
+    public void Act()
     {
-        time++;
-        if (time % 100 == 0)
-        {
-            Prev = Curr;
-            Curr = new MovementData(Source.Prev.Position, Source.Prev.Rotation);
-            base.Update();
-        }
+        Prev = Curr;
+        Curr = new MovementData(Source.Prev.Position, Source.Prev.Rotation);
+        base.Act();
     }
 }

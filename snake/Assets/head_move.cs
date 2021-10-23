@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using _snake;
 using Assets;
 
 public class Head_move : Move
@@ -9,7 +8,7 @@ public class Head_move : Move
     public Vector3 speed = new Vector3(0, 0, 0);
     public Vector3 rotation = new Vector3(-90, 0, 0);
 
-    public Head_move Instance { get; private set; }
+    public static Head_move Instance { get; private set; }
 
     Move lastSegment;
     Tail_move tail;
@@ -17,8 +16,6 @@ public class Head_move : Move
     public GameObject segmentPrefab;
     public int segmentCount;
     int segment_n = 0;
-
-    int time = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -37,13 +34,16 @@ public class Head_move : Move
 
     public void CreateSegment()
     {
+        //Kivonom a curr értéket, mert az lesz majd az elmozdulása kövi állapotban
+        //Csúnya és máshogy kéne megcsinálni, de most semmi más nem jut eszembe hirtelen.
         GameObject seg = Instantiate(segmentPrefab,
-            new Vector3(lastSegment.transform.position.x,
-            lastSegment.transform.position.y,
-            lastSegment.transform.position.z), Quaternion.identity, this.transform.parent);
+            new Vector3(lastSegment.transform.position.x - lastSegment.Curr.Position.x,
+            lastSegment.transform.position.y - lastSegment.Curr.Position.y,
+            lastSegment.transform.position.z - lastSegment.Curr.Position.z), Quaternion.identity, this.transform.parent);
         seg.name = "Body " + (++segment_n).ToString();
         Body_move comp = seg.AddComponent<Body_move>();
-        comp.Setup(lastSegment);
+        comp.Source = lastSegment;
+        snake.Instance.addCell(comp);
         lastSegment = comp;
         tail.Source = lastSegment;
     }
@@ -61,8 +61,7 @@ public class Head_move : Move
     }
 
     // Update is called once per frame
-    override
-    protected void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
@@ -96,13 +95,21 @@ public class Head_move : Move
                 rotation = new Vector3(0, 90, -90);
             }                
         }
+    }
 
-        time++;
-        if (time % 100 == 0)
+    override
+    public void Act()
+    {
+        Prev = Curr;
+        Curr = new MovementData(speed, rotation);
+        base.Act();
+    }
+
+    private void OnTriggerEnter(Collider target)
+    {
+        if(target.tag == Tags.Apple)
         {
-            Prev = Curr;
-            Curr = new MovementData(speed, rotation);
-            base.Update();
+            CreateSegment();
         }
     }
 }

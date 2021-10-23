@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace _snake
+namespace Assets
 {
     public class Move : MonoBehaviour
     {
@@ -14,7 +14,7 @@ namespace _snake
         }
 
         // Update is called once per frame
-        protected virtual void Update()
+        public virtual void Act()
         {
             gameObject.transform.position = new Vector3(
                gameObject.transform.position.x + Curr.Position.x,
