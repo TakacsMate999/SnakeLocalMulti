@@ -2,44 +2,61 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using _snake;
+using Assets;
 
 public class Head_move : Move
 {
     public Vector3 speed = new Vector3(0, 0, 0);
     public Vector3 rotation = new Vector3(-90, 0, 0);
 
-    public static Head_move Instance;
+    public Head_move Instance { get; private set; }
+
+    Move lastSegment;
+    Tail_move tail;
 
     public GameObject segmentPrefab;
     public int segmentCount;
+    int segment_n = 0;
 
     int time = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        lastSegment = this;
         Instance = this;
+        tail = Tail_move.Instance;
         Curr = new MovementData(speed, rotation);
         Prev = Curr;
-        Body_move[] components = new Body_move[segmentCount];
-        GameObject seg = Instantiate(segmentPrefab, 
-            new Vector3(gameObject.transform.position.x,
-            gameObject.transform.position.y,
-            gameObject.transform.position.z), Quaternion.identity);
-        seg.name = "Body 0";
-        Body_move comp = seg.AddComponent<Body_move>();
-        comp.Setup(this);
-        components[0] = comp;
-        for(int i = 1; i < segmentCount; i++)
+        tail.Source = lastSegment;
+        for(int i = 0; i < segmentCount; i++)
         {
-            seg = Instantiate(segmentPrefab,
-            new Vector3(gameObject.transform.position.x,
-            gameObject.transform.position.y,
-            gameObject.transform.position.z), Quaternion.identity);
-            seg.name = "Body " + i.ToString();
-            comp = seg.AddComponent<Body_move>();
-            comp.Setup(components[i - 1]);
-            components[i] = comp;
+            CreateSegment();
+        }
+    }
+
+    public void CreateSegment()
+    {
+        GameObject seg = Instantiate(segmentPrefab,
+            new Vector3(lastSegment.transform.position.x,
+            lastSegment.transform.position.y,
+            lastSegment.transform.position.z), Quaternion.identity, this.transform.parent);
+        seg.name = "Body " + (++segment_n).ToString();
+        Body_move comp = seg.AddComponent<Body_move>();
+        comp.Setup(lastSegment);
+        lastSegment = comp;
+        tail.Source = lastSegment;
+    }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
         }
     }
 
