@@ -63,6 +63,7 @@
     <Compile Include="Assets\Helper_scripts\Tags.cs" />
     <Compile Include="Assets\Scripts\Body_Cell.cs" />
     <Compile Include="Assets\Scripts\Head.cs" />
+    <Compile Include="Assets\Scripts\Apple.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SimpleEnviroment\Particles\shader\Particle_Add_overlay.shader" />

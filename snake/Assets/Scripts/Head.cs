@@ -10,6 +10,8 @@ public class Head : Cell
     public Vector3Int movement = Movement.STOP;
     public Vector3Int rotation = Direction.UP;
 
+    bool started = false;
+
     public static Head Instance { get; private set; }
 
     Cell lastSegment;
@@ -50,10 +52,9 @@ public class Head : Cell
             lastSegment.transform.position.y - lastSegment.Current.Movement.y,
             lastSegment.transform.position.z - lastSegment.Current.Movement.z), Quaternion.identity, this.transform.parent);
         seg.name = "Body " + (++segmentCount).ToString();
-        Body_Cell comp = seg.AddComponent<Body_Cell>();
-        comp.Source = lastSegment;
-        snake.Instance.addCell(comp);
-        lastSegment = comp;
+        ((Body_Cell)seg.GetComponent(typeof(Body_Cell))).Source = lastSegment;
+        snake.Instance.addCell((Body_Cell)seg.GetComponent(typeof(Body_Cell)));
+        lastSegment = (Body_Cell)seg.GetComponent(typeof(Body_Cell));
         tail.Source = lastSegment;
     }
 
@@ -111,14 +112,30 @@ public class Head : Cell
     {
         Previous = Current;
         Current = new MovementData(movement, rotation);
+        if (!Current.Movement.Equals(Movement.STOP))
+        {
+            started = true;
+        }
         base.Move();
     }
 
-    private void OnTriggerEnter(Collider target)
+    private void OnTriggerEnter2D(Collider2D target)
     {
         if(target.tag == Tags.Apple)
         {
             CreateSegment();
+            target.GetComponent<Apple>().createApple();
+            Destroy(target.gameObject);
+        }
+        //Kígyó hozzáér magához
+        if (target.tag == Tags.Snake && started)
+        {
+            snake.Instance.Die();
+        }
+        //Kígyó hozzáér magához
+        if (target.tag == Tags.Wall)
+        {
+            snake.Instance.Die();
         }
     }
 }

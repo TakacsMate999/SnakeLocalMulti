@@ -24,5 +24,10 @@ namespace Assets
             gameObject.transform.eulerAngles = Current.Rotation;
 
         }
+
+        public void DestroyGameObject()
+        {
+            Destroy(this);
+        }
     }
 }

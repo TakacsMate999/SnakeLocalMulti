@@ -40,6 +40,18 @@ public class snake : MonoBehaviour
     {
         cells.Add(cell);
     }
+
+    public void Die()
+    {
+        Head.Instance.DestroyGameObject();
+        foreach(Cell c in cells)
+        {
+            c.DestroyGameObject();
+        }
+        Tail.Instance.DestroyGameObject();
+        print("Rip in peace");
+        Destroy(this);
+    }
 }
 
 //Ebben lehet eltárolni egy lépés adatait
