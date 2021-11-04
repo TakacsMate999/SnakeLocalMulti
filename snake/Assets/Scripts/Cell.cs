@@ -29,5 +29,15 @@ namespace Assets
         {
             Destroy(this);
         }
+
+        //Elpusztítjuk az almát ha olyan helyre kerül ahol kígyó van
+        private void OnTriggerEnter2D(Collider2D target)
+        {
+            if (target.tag == Tags.Apple)
+            {
+                Apple.createApple();
+                Destroy(target.gameObject);
+            }
+        }
     }
 }

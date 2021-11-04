@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{EA5E5C94-03A1-AEDC-67AD-8DF2AB077E38}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -55,15 +56,16 @@
   <ItemGroup>
     <Compile Include="Assets\SimpleEnviroment\Scripts\Storage.cs" />
     <Compile Include="Assets\SimpleEnviroment\Scripts\SceneManager.cs" />
-    <Compile Include="Assets\onstart.cs" />
-    <Compile Include="Assets\Scripts\snake.cs" />
-    <Compile Include="Assets\Scripts\Cell.cs" />
-    <Compile Include="Assets\SimpleEnviroment\Scripts\BasicAnimator.cs" />
-    <Compile Include="Assets\Scripts\Tail.cs" />
     <Compile Include="Assets\Helper_scripts\Tags.cs" />
-    <Compile Include="Assets\Scripts\Body_Cell.cs" />
+    <Compile Include="Assets\onstart.cs" />
     <Compile Include="Assets\Scripts\Head.cs" />
+    <Compile Include="Assets\Scripts\Snake.cs" />
+    <Compile Include="Assets\Scripts\Cell.cs" />
+    <Compile Include="Assets\Scripts\Body_Cell.cs" />
+    <Compile Include="Assets\Scripts\Tail.cs" />
+    <Compile Include="Assets\SimpleEnviroment\Scripts\BasicAnimator.cs" />
     <Compile Include="Assets\Scripts\Apple.cs" />
+    <Compile Include="Assets\Scripts\GameHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SimpleEnviroment\Particles\shader\Particle_Add_overlay.shader" />

@@ -4,11 +4,15 @@ using UnityEngine;
 using Assets;
 
 //Ez kezeli jelenleg a kígyó mozgását. Eltárolja a jelenlegi sejteket és minden 100. update hívásra lépteti õket
-public class snake : MonoBehaviour
+public class Snake : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject applePrefab;
 
-    public static snake Instance;
+    public GameObject headObject;
+    public GameObject tailObject;
+
+    Head head;
+    Tail tail;
 
     int time = 0;
 
@@ -16,7 +20,8 @@ public class snake : MonoBehaviour
 
     void Start()
     {
-        Instance = this;
+        Apple.Initialize(14, 14, applePrefab);
+        Apple.createApple();
     }
 
     // Update is called once per frame
@@ -26,12 +31,12 @@ public class snake : MonoBehaviour
         if(time % 100 == 0)
         {
             //Fontos, hogy fej, test sejtek, farok sorrendben történjen a hívás.
-            Head.Instance.Move();
+            head.Move();
             foreach (Body_Cell cell in cells)
             {
                 cell.Move();
             }
-            Tail.Instance.Move();
+            tail.Move();
         }
         
     }
@@ -43,12 +48,12 @@ public class snake : MonoBehaviour
 
     public void Die()
     {
-        Head.Instance.DestroyGameObject();
+        head.DestroyGameObject();
         foreach(Cell c in cells)
         {
             c.DestroyGameObject();
         }
-        Tail.Instance.DestroyGameObject();
+        tail.DestroyGameObject();
         print("Rip in peace");
         Destroy(this);
     }

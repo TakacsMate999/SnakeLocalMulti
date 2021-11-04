@@ -16,6 +16,9 @@ public class Head : Cell
 
     Cell lastSegment;
     Tail tail;
+    Snake snake;
+
+    public GameObject snakeObject;
 
     //A test sejtjének a prefabja. Ennek a segítségével tudunk újat létrehozni.
     public GameObject segmentPrefab;
@@ -30,8 +33,8 @@ public class Head : Cell
     void Start()
     {
         lastSegment = this;
-        Instance = this;
-        tail = Tail.Instance;
+        snake = snake.GetComponent(typeof(Snake)) as Snake;
+        tail = snake.tailObject.GetComponent(typeof(Tail)) as Tail; 
         Current = new MovementData(movement, rotation);
         Previous = Current;
         tail.Source = lastSegment;
@@ -50,11 +53,11 @@ public class Head : Cell
         GameObject seg = Instantiate(segmentPrefab,
             new Vector3(lastSegment.transform.position.x - lastSegment.Current.Movement.x,
             lastSegment.transform.position.y - lastSegment.Current.Movement.y,
-            lastSegment.transform.position.z - lastSegment.Current.Movement.z), Quaternion.identity, this.transform.parent);
+            0), Quaternion.identity, this.transform.parent);
         seg.name = "Body " + (++segmentCount).ToString();
-        ((Body_Cell)seg.GetComponent(typeof(Body_Cell))).Source = lastSegment;
-        snake.Instance.addCell((Body_Cell)seg.GetComponent(typeof(Body_Cell)));
-        lastSegment = (Body_Cell)seg.GetComponent(typeof(Body_Cell));
+        (seg.GetComponent(typeof(Body_Cell)) as Body_Cell).Source = lastSegment;
+        snake.addCell((Body_Cell)seg.GetComponent(typeof(Body_Cell)));
+        lastSegment = seg.GetComponent(typeof(Body_Cell)) as Body_Cell;
         tail.Source = lastSegment;
     }
 
@@ -75,7 +78,7 @@ public class Head : Cell
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
-            if(!movement.Equals(Movement.DOWN))
+            if(!Previous.Movement.Equals(Movement.DOWN))
             {
                 movement = Movement.UP;
                 rotation = Direction.UP;
@@ -83,7 +86,7 @@ public class Head : Cell
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
-            if (!movement.Equals(Movement.RIGHT))
+            if (!Previous.Movement.Equals(Movement.RIGHT))
             {
                 movement = Movement.LEFT;
                 rotation = Direction.LEFT;
@@ -91,7 +94,7 @@ public class Head : Cell
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            if (!movement.Equals(Movement.UP))
+            if (!Previous.Movement.Equals(Movement.UP))
             {
                 movement = Movement.DOWN;
                 rotation = Direction.DOWN;
@@ -99,7 +102,7 @@ public class Head : Cell
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            if (!movement.Equals(Movement.LEFT))
+            if (!Previous.Movement.Equals(Movement.LEFT))
             {
                 movement = Movement.RIGHT;
                 rotation = Direction.RIGHT;
@@ -124,18 +127,18 @@ public class Head : Cell
         if(target.tag == Tags.Apple)
         {
             CreateSegment();
-            target.GetComponent<Apple>().createApple();
+            Apple.createApple();
             Destroy(target.gameObject);
         }
         //Kígyó hozzáér magához
         if (target.tag == Tags.Snake && started)
         {
-            snake.Instance.Die();
+            snake.Die();
         }
         //Kígyó hozzáér magához
         if (target.tag == Tags.Wall)
         {
-            snake.Instance.Die();
+            snake.Die();
         }
     }
 }
