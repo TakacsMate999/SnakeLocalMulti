@@ -12,65 +12,15 @@ public class Head : Cell
 
     bool started = false;
 
-    public static Head Instance { get; private set; }
-
-    Cell lastSegment;
-    Tail tail;
-    Snake snake;
+    public Snake snake;
 
     public GameObject snakeObject;
-
-    //A test sejtjének a prefabja. Ennek a segítségével tudunk újat létrehozni.
-    public GameObject segmentPrefab;
-
-    //Kezdõ sejt szám
-    public int startingSegmentCount;
-
-    //Aktuális sejt szám. Jelenleg csak updatelem, de nem használom. Majd a pontszámításnál lesz rá szükség.
-    int segmentCount = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        lastSegment = this;
-        snake = snake.GetComponent(typeof(Snake)) as Snake;
-        tail = snake.tailObject.GetComponent(typeof(Tail)) as Tail; 
         Current = new MovementData(movement, rotation);
         Previous = Current;
-        tail.Source = lastSegment;
-        for(int i = 0; i < startingSegmentCount; i++)
-        {
-            CreateSegment();
-        }
-    }
-
-    //Új sejtet csinálunk és betesszük az utolsó testsejt után, de a farok elé.
-    //Majd az elkészült sejtet betesszük a kígyóba is(A snake list-jébe).
-    public void CreateSegment()
-    {
-        //Kivonom a curr értéket, mert az lesz majd az elmozdulása kövi állapotban
-        //Csúnya és máshogy kéne megcsinálni, de most semmi más nem jut eszembe hirtelen.
-        GameObject seg = Instantiate(segmentPrefab,
-            new Vector3(lastSegment.transform.position.x - lastSegment.Current.Movement.x,
-            lastSegment.transform.position.y - lastSegment.Current.Movement.y,
-            0), Quaternion.identity, this.transform.parent);
-        seg.name = "Body " + (++segmentCount).ToString();
-        (seg.GetComponent(typeof(Body_Cell)) as Body_Cell).Source = lastSegment;
-        snake.addCell((Body_Cell)seg.GetComponent(typeof(Body_Cell)));
-        lastSegment = seg.GetComponent(typeof(Body_Cell)) as Body_Cell;
-        tail.Source = lastSegment;
-    }
-
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            Instance = this;
-        }
     }
 
     // Update is called once per frame
@@ -126,7 +76,7 @@ public class Head : Cell
     {
         if(target.tag == Tags.Apple)
         {
-            CreateSegment();
+            snake.CreateSegment();
             Apple.createApple();
             Destroy(target.gameObject);
         }

@@ -45,9 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb003b9287455814b8c5b5721ee4162d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 2498156440966489121, guid: da851ee80f4050743985b42017d0f60b, type: 3}
   headObject: {fileID: 3283740081119861119}
   tailObject: {fileID: 3283740082065352145}
+  segmentPrefab: {fileID: 4682524307731502910, guid: fe01f8b09ad4a584abf9d16ff09785c2, type: 3}
+  startingSegmentCount: 5
 --- !u!1 &3283740080776608736
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,9 +297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {x: 0, y: 0, z: 0}
   rotation: {x: -90, y: 0, z: 0}
+  snake: {fileID: 0}
   snakeObject: {fileID: 3283740080591444803}
-  segmentPrefab: {fileID: 4682524307731502910, guid: fe01f8b09ad4a584abf9d16ff09785c2, type: 3}
-  startingSegmentCount: 5
 --- !u!1 &3283740081534723854
 GameObject:
   m_ObjectHideFlags: 0
