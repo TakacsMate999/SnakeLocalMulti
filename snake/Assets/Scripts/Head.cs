@@ -9,6 +9,7 @@ public class Head : Cell
 {
     public Vector3Int movement = Movement.STOP;
     public Vector3Int rotation = Direction.UP;
+    public AudioSource appleCollect;
 
     bool started = false;
 
@@ -21,6 +22,7 @@ public class Head : Cell
     {
         Current = new MovementData(movement, rotation);
         Previous = Current;
+        appleCollect=GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -74,21 +76,25 @@ public class Head : Cell
 
     private void OnTriggerEnter2D(Collider2D target)
     {
+        
         if(target.tag == Tags.Apple)
         {
+            SoundManager.PlaySound("apple");
             snake.CreateSegment();
-            Apple.createApple();
+            Apple.createApple();            
             Destroy(target.gameObject);
         }
         //Kígyó hozzáér magához
         if (target.tag == Tags.Snake && started)
         {
             snake.Die();
+            SoundManager.PlaySound("gameOver");
         }
         //Kígyó hozzáér magához
         if (target.tag == Tags.Wall)
         {
             snake.Die();
+            SoundManager.PlaySound("gameOver");
         }
     }
 }

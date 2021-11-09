@@ -5,12 +5,14 @@ using UnityEngine;
 public class Apple : MonoBehaviour
 {
     public static GameObject apple_prefab;
+  
 
     private static int xSize = 14;
     private static int ySize = 14;
 
     public static void Initialize(int x, int y, GameObject prefab)
     {
+        
         xSize = x;
         ySize = y;
         apple_prefab = prefab;
@@ -21,6 +23,7 @@ public class Apple : MonoBehaviour
 
     void Start()
     {
+        
     }
 
     public static void createApple()
