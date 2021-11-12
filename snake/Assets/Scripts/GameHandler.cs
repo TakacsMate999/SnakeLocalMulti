@@ -11,18 +11,13 @@ public class GameHandler : MonoBehaviour
     {
         Apple.Initialize(14, 14, applePrefab);
         Apple.createApple();
-        this.createSnake(5, 6);
+        Snake.CreateSnake(5, 6, snakePrefab).setControllKeys("W", "A", "S", "D");
+        Snake.CreateSnake(7, 8, snakePrefab).setControllKeys("I", "J", "K", "L");
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public void createSnake(int x, int y)
-    {
-        Snake first = Instantiate(snakePrefab).GetComponent<Snake>();
-        //first.reposition(x, y);
     }
 }

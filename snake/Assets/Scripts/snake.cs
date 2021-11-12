@@ -6,14 +6,20 @@ using Assets;
 //Ez kezeli jelenleg a kígyó mozgását. Eltárolja a jelenlegi sejteket és minden 100. update hívásra lépteti õket
 public class Snake : MonoBehaviour
 {
-    public GameObject headObject;
-    public GameObject tailObject;
+    public GameObject headPrefab;
+    public GameObject tailPrefab;
 
     //A test sejtjének a prefabja. Ennek a segítségével tudunk újat létrehozni.
+    //nem biztos, hogy kell
     public GameObject segmentPrefab;
 
     Head head;
     Tail tail;
+    GameObject headObject;
+    GameObject tailObject;
+
+    public bool createCellSignal = false;
+
 
     //Kezdõ sejt szám
     public int startingSegmentCount;
@@ -28,19 +34,38 @@ public class Snake : MonoBehaviour
 
     Cell lastSegment;
 
+    public void setControllKeys(string up, string left, string down, string right)
+    {
+        head.setControllKeys(up, left, down, right);
+    }
+
     void Start()
     {
-        head = headObject.GetComponent<Head>();
-        head.snake = this;
-        tail = tailObject.GetComponent<Tail>();
-
-        lastSegment = head;
-        tail.Source = lastSegment;
-
         for(int i = 0; i < startingSegmentCount; i++)
         {
             CreateSegment();
         }
+    }
+
+    public static Snake CreateSnake(int x, int y, GameObject snakePrefab)
+    {
+        Vector3Int headPos = new Vector3Int(x, y, -1);
+        Vector3Int tailPos = new Vector3Int(x, y, 0);
+        Snake s = Instantiate(snakePrefab).GetComponent<Snake>();
+        s.createHeadTail(headPos, tailPos);
+
+        return s;
+    }
+
+    public void createHeadTail(Vector3Int hpos, Vector3Int tpos)
+    {
+        headObject = Instantiate(headPrefab, hpos + gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0 ,0)), gameObject.transform);
+        head = headObject.GetComponent<Head>();
+        head.snake = this;
+        lastSegment = head;
+        tailObject = Instantiate(tailPrefab, tpos + gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)), gameObject.transform);
+        tail = tailObject.GetComponent<Tail>();
+        tail.Source = lastSegment;
     }
 
     //Új sejtet csinálunk és betesszük az utolsó testsejt után, de a farok elé.
@@ -50,14 +75,15 @@ public class Snake : MonoBehaviour
         //Kivonom a curr értéket, mert az lesz majd az elmozdulása kövi állapotban
         //Csúnya és máshogy kéne megcsinálni, de most semmi más nem jut eszembe hirtelen.
         GameObject seg = Instantiate(segmentPrefab,
-            new Vector3(lastSegment.transform.position.x - lastSegment.Current.Movement.x,
-            lastSegment.transform.position.y - lastSegment.Current.Movement.y,
-            0), Quaternion.identity, this.transform.parent);
+            lastSegment.transform.position - lastSegment.Current.Movement, lastSegment.transform.rotation, gameObject.transform);
         seg.name = "Body " + (++segmentCount).ToString();
-        seg.GetComponent<Body_Cell>().Source = lastSegment;
+        Body_Cell cell = seg.GetComponent<Body_Cell>();
+        cell.Source = lastSegment;
+        cell.Current = new MovementData(Movement.STOP, lastSegment.Current.Rotation);
+        cell.Previous = lastSegment.Previous;
         seg.transform.parent = gameObject.transform;
-        addCell(seg.GetComponent<Body_Cell>());
-        lastSegment = seg.GetComponent<Body_Cell>();
+        addCell(cell);
+        lastSegment = cell;
         tail.Source = lastSegment;
     }
 
@@ -67,6 +93,11 @@ public class Snake : MonoBehaviour
         time++;
         if(time % speed == 0)
         {
+            if (createCellSignal)
+            {
+                CreateSegment();
+                createCellSignal = false;
+            }
             //Fontos, hogy fej, test sejtek, farok sorrendben történjen a hívás.
             head.Move();
             foreach (Body_Cell cell in cells)
@@ -76,16 +107,6 @@ public class Snake : MonoBehaviour
             tail.Move();
         }
         
-    }
-
-    public void reposition(int x, int y)
-    {
-        if (head is null)
-        {
-            head = headObject.GetComponent<Head>();
-        }       
-        Vector3Int mov = new Vector3Int(x, y, head.Current.Movement.z);
-        head.Current = new MovementData(mov, head.Current.Rotation);
     }
 
     public void addCell(Body_Cell cell)

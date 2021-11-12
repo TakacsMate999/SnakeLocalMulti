@@ -11,24 +11,34 @@ public class Head : Cell
     public Vector3Int rotation = Direction.UP;
     public AudioSource appleCollect;
 
+    KeyCode up = KeyCode.W;
+    KeyCode left = KeyCode.A;
+    KeyCode down = KeyCode.S;
+    KeyCode right = KeyCode.D;
+
     bool started = false;
 
     public Snake snake;
 
-    public GameObject snakeObject;
+    //A kapott stringeket állítja be az irányításra. Ha több mint egy karakter a kapott string valamelyike akkor meghalunk. Nme kéne, hogy ilyen legyen.
+    public void setControllKeys(string up, string left, string down, string right)
+    {
+        this.up = (KeyCode)System.Enum.Parse(typeof(KeyCode), up);
+        this.left = (KeyCode)System.Enum.Parse(typeof(KeyCode), left);
+        this.down = (KeyCode)System.Enum.Parse(typeof(KeyCode), down);
+        this.right = (KeyCode)System.Enum.Parse(typeof(KeyCode), right);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        Current = new MovementData(movement, rotation);
-        Previous = Current;
-        appleCollect=GetComponent<AudioSource>();
+        appleCollect = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(up))
         {
             if(!Previous.Movement.Equals(Movement.DOWN))
             {
@@ -36,7 +46,7 @@ public class Head : Cell
                 rotation = Direction.UP;
             }
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(left))
         {
             if (!Previous.Movement.Equals(Movement.RIGHT))
             {
@@ -44,7 +54,7 @@ public class Head : Cell
                 rotation = Direction.LEFT;
             }  
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(down))
         {
             if (!Previous.Movement.Equals(Movement.UP))
             {
@@ -52,7 +62,7 @@ public class Head : Cell
                 rotation = Direction.DOWN;
             }                
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(right))
         {
             if (!Previous.Movement.Equals(Movement.LEFT))
             {
@@ -76,25 +86,29 @@ public class Head : Cell
 
     private void OnTriggerEnter2D(Collider2D target)
     {
+        if (started)
+        {
+            if (target.tag == Tags.Apple)
+            {
+                SoundManager.PlaySound("apple");
+                //snake.CreateSegment();
+                snake.createCellSignal = true;
+                Apple.createApple();
+                Destroy(target.gameObject);
+            }
+            //Kígyó hozzáér magához
+            if (target.tag == Tags.Snake)
+            {
+                snake.Die();
+                SoundManager.PlaySound("gameOver");
+            }
+            //Kígyó hozzáér a falhoz
+            if (target.tag == Tags.Wall)
+            {
+                snake.Die();
+                SoundManager.PlaySound("gameOver");
+            }
+        }
         
-        if(target.tag == Tags.Apple)
-        {
-            SoundManager.PlaySound("apple");
-            snake.CreateSegment();
-            Apple.createApple();            
-            Destroy(target.gameObject);
-        }
-        //Kígyó hozzáér magához
-        if (target.tag == Tags.Snake && started)
-        {
-            snake.Die();
-            SoundManager.PlaySound("gameOver");
-        }
-        //Kígyó hozzáér magához
-        if (target.tag == Tags.Wall)
-        {
-            snake.Die();
-            SoundManager.PlaySound("gameOver");
-        }
     }
 }

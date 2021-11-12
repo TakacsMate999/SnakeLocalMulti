@@ -12,7 +12,6 @@ public class Apple : MonoBehaviour
 
     public static void Initialize(int x, int y, GameObject prefab)
     {
-        
         xSize = x;
         ySize = y;
         apple_prefab = prefab;
