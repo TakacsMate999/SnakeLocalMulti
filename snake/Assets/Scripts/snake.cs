@@ -85,6 +85,7 @@ public class Snake : MonoBehaviour
         addCell(cell);
         lastSegment = cell;
         tail.Source = lastSegment;
+        
     }
 
     // Update is called once per frame

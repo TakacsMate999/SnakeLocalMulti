@@ -45,5 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headPrefab: {fileID: 2282674155807487502, guid: f58eb22ad00eeee48b209e919836de12, type: 3}
   tailPrefab: {fileID: 7057802665918578379, guid: 74fb871e8ca4f4d44bd1cd15b969baad, type: 3}
+  particle: {fileID: 1819575536736199649, guid: fa5591bf1fbc4984ea6961afc30df991, type: 3}
   segmentPrefab: {fileID: 4682524307731502910, guid: fe01f8b09ad4a584abf9d16ff09785c2, type: 3}
-  startingSegmentCount: 5
+  createCellSignal: 0
