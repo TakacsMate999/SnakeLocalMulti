@@ -22,12 +22,12 @@ public class Snake : MonoBehaviour
 
 
     //Kezdõ sejt szám
-    public int startingSegmentCount;
+    public static int startingSegmentCount;
 
     //Aktuális sejt szám. Jelenleg csak updatelem, de nem használom. Majd a pontszámításnál lesz rá szükség.
-    int segmentCount = 0;
+    public static int segmentCount = 0;
 
-    int speed = 70;
+    public static int speed = 70;
     int time = 0;
 
     List<Body_Cell> cells = new List<Body_Cell>();

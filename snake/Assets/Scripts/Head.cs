@@ -9,6 +9,7 @@ public class Head : Cell
 {
     public Vector3Int movement = Movement.STOP;
     public Vector3Int rotation = Direction.UP;
+    public Vector3Int prevMov = Movement.STOP;
     public AudioSource appleCollect;
 
     KeyCode up = KeyCode.W;
@@ -40,7 +41,7 @@ public class Head : Cell
     {
         if (Input.GetKeyDown(up))
         {
-            if(!Previous.Movement.Equals(Movement.DOWN))
+            if(!prevMov.Equals(Movement.DOWN))
             {
                 movement = Movement.UP;
                 rotation = Direction.UP;
@@ -48,7 +49,7 @@ public class Head : Cell
         }
         if (Input.GetKeyDown(left))
         {
-            if (!Previous.Movement.Equals(Movement.RIGHT))
+            if (!prevMov.Equals(Movement.RIGHT))
             {
                 movement = Movement.LEFT;
                 rotation = Direction.LEFT;
@@ -56,7 +57,7 @@ public class Head : Cell
         }
         if (Input.GetKeyDown(down))
         {
-            if (!Previous.Movement.Equals(Movement.UP))
+            if (!prevMov.Equals(Movement.UP))
             {
                 movement = Movement.DOWN;
                 rotation = Direction.DOWN;
@@ -64,7 +65,7 @@ public class Head : Cell
         }
         if (Input.GetKeyDown(right))
         {
-            if (!Previous.Movement.Equals(Movement.LEFT))
+            if (!prevMov.Equals(Movement.LEFT))
             {
                 movement = Movement.RIGHT;
                 rotation = Direction.RIGHT;
@@ -76,6 +77,7 @@ public class Head : Cell
     public void Move()
     {
         Previous = Current;
+        prevMov = movement;
         Current = new MovementData(movement, rotation);
         if (!Current.Movement.Equals(Movement.STOP))
         {
