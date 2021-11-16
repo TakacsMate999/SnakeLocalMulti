@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class SpeedButtonClick : MonoBehaviour
 {
-    public GameObject inputField;
+    public InputField inputField;
 
 
     public void Click()
     {
-        int value = Convert.ToInt32(inputField.GetComponent<Text>().text);
-        GameHandler.speed = value;
+        double value = Convert.ToDouble(inputField.text);
+        GameHandler.speed = (float)value;
         Debug.Log("Changed speed to " + value);
     }
 }

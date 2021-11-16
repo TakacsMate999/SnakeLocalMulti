@@ -5,28 +5,22 @@ using UnityEngine;
 public class Apple : MonoBehaviour
 {
     public static GameObject apple_prefab;
-    public static AppleHandler appleHandler;
+
+    public static GameObject particle;
+    static GameObject currentParticle;
 
     public static int counter;
 
     private static int xSize = 14;
     private static int ySize = 14;
 
-    public static void Initialize(int x, int y, GameObject prefab, AppleHandler a)
+    public static void Initialize(int x, int y, GameObject prefab, GameObject _particle)
     {
         counter = 0;
         xSize = x;
         ySize = y;
         apple_prefab = prefab;
-        appleHandler = a;
-    }
-
-    public Apple() { }
-
-
-    void Start()
-    {
-        
+        particle = _particle;
     }
 
     public static void createApple()
@@ -44,8 +38,20 @@ public class Apple : MonoBehaviour
         app.name = "apple";
         if (counter != 0&&position!=null)
         {
-            appleHandler.createParticle(position);
+            createParticle(position);
         }
         counter++;
+    }
+
+    
+    // Start is called before the first frame update
+    public static void createParticle(Vector3 v)
+    {
+        if(currentParticle != null)
+        {
+            Destroy(currentParticle);
+        }
+        currentParticle = Instantiate(particle, v, particle.transform.rotation);
+        Debug.Log($"Particle created at{v.x},{v.y},{v.z}");
     }
 }

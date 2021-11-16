@@ -27,8 +27,7 @@ public class Snake : MonoBehaviour
     //Aktuális sejt szám. Jelenleg csak updatelem, de nem használom. Majd a pontszámításnál lesz rá szükség.
     public static int segmentCount = 0;
 
-    public static int speed = 70;
-    int time = 0;
+    public static float speed = 0.2f;
 
     List<Body_Cell> cells = new List<Body_Cell>();
 
@@ -45,6 +44,7 @@ public class Snake : MonoBehaviour
         {
             CreateSegment();
         }
+        InvokeRepeating("MoveCells", 0, speed);
     }
 
     public static Snake CreateSnake(int x, int y, GameObject snakePrefab)
@@ -89,24 +89,20 @@ public class Snake : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    public void MoveCells()
     {
-        time++;
-        if(time % speed == 0)
+        if (createCellSignal)
         {
-            if (createCellSignal)
-            {
-                CreateSegment();
-                createCellSignal = false;
-            }
-            //Fontos, hogy fej, test sejtek, farok sorrendben történjen a hívás.
-            head.Move();
-            foreach (Body_Cell cell in cells)
-            {
-                cell.Move();
-            }
-            tail.Move();
+            CreateSegment();
+            createCellSignal = false;
         }
+        //Fontos, hogy fej, test sejtek, farok sorrendben történjen a hívás.
+        head.Move();
+        foreach (Body_Cell cell in cells)
+        {
+            cell.Move();
+        }
+        tail.Move();
         
     }
 
