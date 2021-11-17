@@ -1,126 +1,126 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'hu' Physical Memory: 8111 MB
+OS: 'Windows 10 Education; OS build 19041.1348; Version 2004; 64bit' Language: 'hu' Physical Memory: 16333 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-E:\Program Files\2020.3.20f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/schei/source/repos/SnakeLocalMulti/snake
+C:/data/Egyetem/Témalabor/SnakeLocalMulti3/snake
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54035
-Successfully changed project path to: C:/Users/schei/source/repos/SnakeLocalMulti/snake
-C:/Users/schei/source/repos/SnakeLocalMulti/snake
+12091
+Successfully changed project path to: C:/data/Egyetem/Témalabor/SnakeLocalMulti3/snake
+C:/data/Egyetem/Témalabor/SnakeLocalMulti3/snake
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 55.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 43.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.20f1 (41c4e627c95f)
-[Subsystems] Discovering subsystems at path E:/Program Files/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/schei/source/repos/SnakeLocalMulti/snake/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/data/Egyetem/Témalabor/SnakeLocalMulti3/snake/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 SUPER (ID=0x2187)
+    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
     Vendor:   
-    VRAM:     3955 MB
-    Driver:   27.21.14.5671
+    VRAM:     8031 MB
+    Driver:   27.21.14.6677
 Initialize mono
-Mono path[0] = 'E:/Program Files/2020.3.20f1/Editor/Data/Managed'
-Mono path[1] = 'E:/Program Files/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'E:/Program Files/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56576
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/Program Files/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: E:/Program Files/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001672 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002207 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 53.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.325 seconds
+- Completed reload, in  1.118 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1325ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (1118ms)
+		BeginReloadAssembly (44ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (498ms)
-			LoadAssemblies (57ms)
+		EndReloadAssembly (352ms)
+			LoadAssemblies (42ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (171ms)
+			SetupTypeCache (123ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (208ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (143ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (54ms)
-				BeforeProcessingInitializeOnLoad (20ms)
-				ProcessInitializeOnLoadAttributes (96ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (43ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (61ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003495 seconds.
+Registered in 0.003458 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 51.56 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.273 seconds
+- Completed reload, in  0.933 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1273ms)
-		BeginReloadAssembly (161ms)
+	ReloadAssembly (933ms)
+		BeginReloadAssembly (120ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1047ms)
-			LoadAssemblies (98ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (758ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (326ms)
+			SetupTypeCache (239ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (417ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (298ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (245ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (42ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.8 MB.
-System memory in use after: 96.9 MB.
+Unloading 2125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.6 MB.
+System memory in use after: 96.6 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2575.
-Total: 3.102700 ms (FindLiveObjects: 0.187600 ms CreateObjectMapping: 0.084700 ms MarkObjects: 2.756600 ms  DeleteObjects: 0.072700 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2570.
+Total: 2.809300 ms (FindLiveObjects: 0.190000 ms CreateObjectMapping: 0.047600 ms MarkObjects: 2.512200 ms  DeleteObjects: 0.058500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,984 +134,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/SimpleEnviroment/Game/enviroment_scene/ReflectionProbe-0.exr
-  artifactKey: Guid(99b034ad897b442f1b820891c71bc556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Game/enviroment_scene/ReflectionProbe-0.exr using Guid(99b034ad897b442f1b820891c71bc556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6646234333c214e6d2229d28a3e225') in 0.189281 seconds 
-  Import took 0.194525 seconds .
+  path: Assets/Prefabs/AppleHandler.prefab
+  artifactKey: Guid(02e3119d84e8fc140896f75d88531f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AppleHandler.prefab using Guid(02e3119d84e8fc140896f75d88531f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4522a06869655713ad9e40ca48971b') in 0.044864 seconds 
+  Import took 0.047967 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/SimpleEnviroment/Game/snake_scene/ReflectionProbe-0.exr
-  artifactKey: Guid(efb9bd7f637c6024ba1a74012e66b79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Game/snake_scene/ReflectionProbe-0.exr using Guid(efb9bd7f637c6024ba1a74012e66b79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85aa7e027454f44ea4c70c3f29d6e08f') in 0.030345 seconds 
-  Import took 0.034132 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/SimpleEnviroment/Game/enviroment_scene/LightingData.asset
-  artifactKey: Guid(9b2bc2fd494cf4f8387e1dddee91f860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Game/enviroment_scene/LightingData.asset using Guid(9b2bc2fd494cf4f8387e1dddee91f860) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Lighting data asset ‘LightingData’ is inconsistent because 1 files out of 4 are missing.  Please use Generate Lighting to rebuild the lighting data.
- -> (artifact id: 'd06cfee0504a1cd4fcba6fcad22b46de') in 0.019674 seconds 
-  Import took 0.024936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/SimpleEnviroment/Game/snake_scene/LightingData.asset
-  artifactKey: Guid(faae7132e37552246b658ad0120c5446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Game/snake_scene/LightingData.asset using Guid(faae7132e37552246b658ad0120c5446) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Lighting data asset ‘LightingData’ is inconsistent because 1 files out of 4 are missing.  Please use Generate Lighting to rebuild the lighting data.
- -> (artifact id: '6620e45ce7451314c787d6129ca3bfb9') in 0.010061 seconds 
-  Import took 0.018667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.547770 seconds.
-  path: Assets/SimpleEnviroment/Models/general
-  artifactKey: Guid(1cb3e38fb0f6f2848b1333b3f0e77f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/general using Guid(1cb3e38fb0f6f2848b1333b3f0e77f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586e15e3128c57665986ccfde45ac2c3') in 0.007702 seconds 
-  Import took 0.011767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.048670 seconds.
-  path: Assets/SimpleEnviroment/Models/general/snake_body_shadow_caster.FBX
-  artifactKey: Guid(c989f1f93ea61344483e901b7c907b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/general/snake_body_shadow_caster.FBX using Guid(c989f1f93ea61344483e901b7c907b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4a7e2577fad10f5e0dde3da41db360a') in 0.110308 seconds 
-  Import took 0.114275 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.702313 seconds.
-  path: Assets/SimpleEnviroment/Models/general/materials
-  artifactKey: Guid(62e388d2eaaf86e41bd866c26670d2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/general/materials using Guid(62e388d2eaaf86e41bd866c26670d2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79784f46e1aa6d3da79431a330e5ca28') in 0.010273 seconds 
-  Import took 0.014173 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013271 seconds.
-  path: Assets/SimpleEnviroment/Models/general/materials/shadow_blob.mat
-  artifactKey: Guid(eeb56ec58864ada4cab9736dd1101b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/general/materials/shadow_blob.mat using Guid(eeb56ec58864ada4cab9736dd1101b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4fbda02e797c8fb61557a6567f8b92') in 0.034908 seconds 
-  Import took 0.038712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/SimpleEnviroment/Models/general/materials/shadow_caster.mat
-  artifactKey: Guid(6e5fbae780d2fa4479dc592f9a8612e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/general/materials/shadow_caster.mat using Guid(6e5fbae780d2fa4479dc592f9a8612e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e1f8f34654b18522302fffb990714b') in 0.024711 seconds 
-  Import took 0.027834 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/SimpleEnviroment/Models/general/materials/shadow_blob_side.mat
-  artifactKey: Guid(5f9177553eecec94f85492407d491a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/general/materials/shadow_blob_side.mat using Guid(5f9177553eecec94f85492407d491a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4122ab00677d3445c183b997d1683a1b') in 0.026953 seconds 
-  Import took 0.030942 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.269979 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs
-  artifactKey: Guid(e8563f0bde03f4676b6e63c13898cfd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs using Guid(e8563f0bde03f4676b6e63c13898cfd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e70ad3280a4719fce739e761e68895') in 0.010625 seconds 
-  Import took 0.014285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028124 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Blue_Racer_Body_A.prefab
-  artifactKey: Guid(bcddf0fb8f960fe4dad489139e89c795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Blue_Racer_Body_A.prefab using Guid(bcddf0fb8f960fe4dad489139e89c795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66eea6f8b235d5ccb8ed92a5fff2a90') in 0.077960 seconds 
-  Import took 0.083707 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Limousine_Body.prefab
-  artifactKey: Guid(8ced990d21d7bee46a9bf77649a1e4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Limousine_Body.prefab using Guid(8ced990d21d7bee46a9bf77649a1e4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b2b8b3a0a27150f86b87930647ffcf') in 0.061973 seconds 
-  Import took 0.067080 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Blue_Racer_Tail.prefab
-  artifactKey: Guid(ef1e561a128c76e41850e8f2c66d9a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Blue_Racer_Tail.prefab using Guid(ef1e561a128c76e41850e8f2c66d9a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696711e28df88bd8ab467a51e594ffb7') in 0.053523 seconds 
-  Import took 0.057364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Limousine_Tail.prefab
-  artifactKey: Guid(abcf771abf5cfec4896ea7770fd8f7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Limousine_Tail.prefab using Guid(abcf771abf5cfec4896ea7770fd8f7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22cc29f8df29a36ac5beb4d5f28c2b7') in 0.056136 seconds 
-  Import took 0.060087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Blue_Racer_Head.prefab
-  artifactKey: Guid(6add784bd8ee0594b9283306b4f814eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Blue_Racer_Head.prefab using Guid(6add784bd8ee0594b9283306b4f814eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa7b318cd96097900cf76a399d39999') in 0.052201 seconds 
-  Import took 0.055760 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Snake_Green_Head.prefab
-  artifactKey: Guid(daf02665c6297474d86f19d46f9eecc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Snake_Green_Head.prefab using Guid(daf02665c6297474d86f19d46f9eecc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd613797e51f14c5a6a2a5c62e8b6c0d5') in 0.039474 seconds 
-  Import took 0.043517 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Limousine_Head.prefab
-  artifactKey: Guid(5eb9d1dce00e9f14c94afbd9bff3c557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Limousine_Head.prefab using Guid(5eb9d1dce00e9f14c94afbd9bff3c557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2865bd1a8d7e72235da2728f4528aa5d') in 0.056955 seconds 
-  Import took 0.060433 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Snake_Green_Tail.prefab
-  artifactKey: Guid(b18076d321c818349b63a8c25432da94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Snake_Green_Tail.prefab using Guid(b18076d321c818349b63a8c25432da94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e692df4c4ebadb26c5fa283b0e7468b1') in 0.025470 seconds 
-  Import took 0.029036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Snake_Green_Body_B.prefab
-  artifactKey: Guid(50ec1fc2c644fac42af1f81b83310e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Snake_Green_Body_B.prefab using Guid(50ec1fc2c644fac42af1f81b83310e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6849aa6b90dbce5828986dc8878adf8f') in 0.024694 seconds 
-  Import took 0.028396 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Blue_Racer_Body_B.prefab
-  artifactKey: Guid(8ccc6fac377464a4b842aaf29bb404b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Blue_Racer_Body_B.prefab using Guid(8ccc6fac377464a4b842aaf29bb404b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df286aafce759cc94acedb1babb8663') in 0.031139 seconds 
-  Import took 0.036530 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/SimpleEnviroment/Resources/SnakePrefabs/Snake_Green_Body_A.prefab
-  artifactKey: Guid(dbe9e083a672ee7488c1180f7e0e7dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/SnakePrefabs/Snake_Green_Body_A.prefab using Guid(dbe9e083a672ee7488c1180f7e0e7dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8f3397a031acb0846b7e2c405298ae') in 0.028633 seconds 
-  Import took 0.032356 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.531239 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects
-  artifactKey: Guid(378e3acd2c6414067a2eaeecce1dd074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects using Guid(378e3acd2c6414067a2eaeecce1dd074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793e7a33da2fb10abfced9e0cef5a579') in 0.010232 seconds 
-  Import took 0.014104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.047287 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/ButterFly.prefab
-  artifactKey: Guid(dbf2c5e4e75f88f4fa48f195b4d88ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/ButterFly.prefab using Guid(dbf2c5e4e75f88f4fa48f195b4d88ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e79ec5f93fee898a28d22735ae0de9b') in 0.089633 seconds 
-  Import took 0.093877 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Egg_Fruit_Pear.prefab
-  artifactKey: Guid(eca33a70a92dfa94d88d9a15eb3eabfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Egg_Fruit_Pear.prefab using Guid(eca33a70a92dfa94d88d9a15eb3eabfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aec3d348047e462e5a303a441575224') in 0.043472 seconds 
-  Import took 0.046859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Coin.prefab
-  artifactKey: Guid(7a5d3e92dcddc5443940a1119ab32da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Coin.prefab using Guid(7a5d3e92dcddc5443940a1119ab32da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea72941e8833069bc5311dac5042a0f7') in 0.043824 seconds 
-  Import took 0.047157 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Switcher.prefab
-  artifactKey: Guid(67c495b430586bf4393bbff409f83450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Switcher.prefab using Guid(67c495b430586bf4393bbff409f83450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a4d6c401bdd0a793f76613cb77514e6') in 0.031211 seconds 
-  Import took 0.034740 seconds .
+  Time since last request: 0.000184 seconds.
+  path: Assets/Prefabs/green_snake_tail.prefab
+  artifactKey: Guid(74fb871e8ca4f4d44bd1cd15b969baad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/green_snake_tail.prefab using Guid(74fb871e8ca4f4d44bd1cd15b969baad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944b517ec963e7e7be0e9ef5f711531b') in 0.055630 seconds 
+  Import took 0.058795 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000160 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Fruit_Pear.prefab
-  artifactKey: Guid(47581f88f1ac6e649adbecd2fee547ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Fruit_Pear.prefab using Guid(47581f88f1ac6e649adbecd2fee547ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08fe27cdfefd271a43bc198a30625093') in 0.067797 seconds 
-  Import took 0.071878 seconds .
+  path: Assets/Prefabs/fruit_apple.prefab
+  artifactKey: Guid(da851ee80f4050743985b42017d0f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/fruit_apple.prefab using Guid(da851ee80f4050743985b42017d0f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de931918d3781e7716d8c03e532a8b63') in 0.008763 seconds 
+  Import took 0.012052 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/EggTimer.prefab
-  artifactKey: Guid(9b8d7a70d8fbea949811487b04aa596e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/EggTimer.prefab using Guid(9b8d7a70d8fbea949811487b04aa596e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2152f1e2c4d34d6af437291348405ec') in 0.042191 seconds 
-  Import took 0.055363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/EggLife.prefab
-  artifactKey: Guid(2adf4022419f02e46bea2909929a7295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/EggLife.prefab using Guid(2adf4022419f02e46bea2909929a7295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6189eb2993d51469fd0e9147620926ba') in 0.023107 seconds 
-  Import took 0.031515 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/EventTrigger.prefab
-  artifactKey: Guid(eb79921249793054f8f67c26aa017b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/EventTrigger.prefab using Guid(eb79921249793054f8f67c26aa017b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbbab168a6ae3da73d96645ec37e0b0') in 0.035174 seconds 
-  Import took 0.040349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/SoccerGoal.prefab
-  artifactKey: Guid(f243f84718ae63b439042f0052aa9420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/SoccerGoal.prefab using Guid(f243f84718ae63b439042f0052aa9420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26991f430ba2ab8e986594f5c601ff5a') in 0.024234 seconds 
-  Import took 0.028293 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Egg_Fruit_Orange.prefab
-  artifactKey: Guid(7c00e1aa965f8994791e3bf7d55d5404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Egg_Fruit_Orange.prefab using Guid(7c00e1aa965f8994791e3bf7d55d5404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b97d79007c54fac9706997db729294') in 0.031672 seconds 
-  Import took 0.035059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/EggInvincible.prefab
-  artifactKey: Guid(2918743ea337e544f99c9cced81ed592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/EggInvincible.prefab using Guid(2918743ea337e544f99c9cced81ed592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8223b46f91dd639a438e85b02e57c112') in 0.013117 seconds 
-  Import took 0.016319 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Egg_Fruit_Apple.prefab
-  artifactKey: Guid(aa2a7197f38a3024ba87bc08a3d33b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Egg_Fruit_Apple.prefab using Guid(aa2a7197f38a3024ba87bc08a3d33b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859a36f70e81c4f1deeecb184844f9ee') in 0.031723 seconds 
-  Import took 0.035492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Gate.prefab
-  artifactKey: Guid(e0ff683e6d0afc744b04313781fa4bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Gate.prefab using Guid(e0ff683e6d0afc744b04313781fa4bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cafcfddd80666af4874856aca4d0d3b3') in 0.012943 seconds 
-  Import took 0.016751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/SoccerBall.prefab
-  artifactKey: Guid(889583ca73bdaed439ecfa4eba6fb285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/SoccerBall.prefab using Guid(889583ca73bdaed439ecfa4eba6fb285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2431a75513440aaf0195ccc3bb3512') in 0.027100 seconds 
-  Import took 0.031185 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Fruit_Apple.prefab
-  artifactKey: Guid(114a30175a323a04392c67422c7cc18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Fruit_Apple.prefab using Guid(114a30175a323a04392c67422c7cc18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac33b704286dc0caa44005a36befb64') in 0.033742 seconds 
-  Import took 0.037158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/SpikeTrap.prefab
-  artifactKey: Guid(3c9029ad676d2d141b811db5e946720c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/SpikeTrap.prefab using Guid(3c9029ad676d2d141b811db5e946720c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33fb932f0d0a4224df3d2ff64e117f0b') in 0.013512 seconds 
-  Import took 0.017202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/SimpleEnviroment/Resources/GameObjects/Fruit_Orange.prefab
-  artifactKey: Guid(928d7519fd784eb428aa2188941e1425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Resources/GameObjects/Fruit_Orange.prefab using Guid(928d7519fd784eb428aa2188941e1425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44aa29cdf67e898bda889d8bcd25b9eb') in 0.024282 seconds 
-  Import took 0.029551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.052199 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/fruit_apple/textures/apple.png
-  artifactKey: Guid(80710e2304c7bb645acf66c863764d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/fruit_apple/textures/apple.png using Guid(80710e2304c7bb645acf66c863764d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f397ae8b6ec44702a103988091cf820f') in 0.053187 seconds 
-  Import took 0.058412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/fruit_apple/Materials/apple.mat
-  artifactKey: Guid(c1041bedf4dfeab418ea575fd3d35a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/fruit_apple/Materials/apple.mat using Guid(c1041bedf4dfeab418ea575fd3d35a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49301fdb6d83c37db33014545ec790da') in 0.018975 seconds 
-  Import took 0.023168 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/fruit_apple/textures/apple_soft_shadow.tga
-  artifactKey: Guid(35c33178985fff04686b0294b3eac001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/fruit_apple/textures/apple_soft_shadow.tga using Guid(35c33178985fff04686b0294b3eac001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac7ec721c3f742b34c979426435d3c05') in 0.018896 seconds 
-  Import took 0.022793 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000955 seconds.
-  path: Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Village Props.png
-  artifactKey: Guid(7810966f0f690954c87305933cabf2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Village Props.png using Guid(7810966f0f690954c87305933cabf2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5969e0862b3bd9f684948fbbd603f9db') in 0.600427 seconds 
-  Import took 0.604914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/fruit_apple/Materials/apple_soft_shadow.mat
-  artifactKey: Guid(dbed0b804adc5a64f8ce004ff3085200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/fruit_apple/Materials/apple_soft_shadow.mat using Guid(dbed0b804adc5a64f8ce004ff3085200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec30f316a848f8f50860e80870447ed7') in 0.016727 seconds 
-  Import took 0.020577 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.810134 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_bush.FBX
-  artifactKey: Guid(a165f1a73687ade4790e4229d9fecd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_bush.FBX using Guid(a165f1a73687ade4790e4229d9fecd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9974d7a190301aaa91b2a39645255529') in 0.006493 seconds 
-  Import took 0.010547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_ground.FBX
-  artifactKey: Guid(f9b26e20b4ad3d842bcb8997b39ddf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_ground.FBX using Guid(f9b26e20b4ad3d842bcb8997b39ddf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c4758054a1e3f7cb0f9fc67f5dcd71') in 0.007534 seconds 
-  Import took 0.011324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_bush_shadow_caster.FBX
-  artifactKey: Guid(ba62af6c142bdcb4994e139bd3ae5f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_bush_shadow_caster.FBX using Guid(ba62af6c142bdcb4994e139bd3ae5f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e6a4b967ad76fe38c70b373755f4d9') in 0.013154 seconds 
-  Import took 0.016997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.069049 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_ground_shadow_caster.FBX
-  artifactKey: Guid(56e6ea5747ba5854c80b8e177b9c4bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_ground_shadow_caster.FBX using Guid(56e6ea5747ba5854c80b8e177b9c4bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f792a52dbc6b085213f3e732ae1b4a9b') in 0.011910 seconds 
-  Import took 0.018354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.219540 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_tree.FBX
-  artifactKey: Guid(ce7f324f05da8b440bbfbde1f9ad51be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_tree.FBX using Guid(ce7f324f05da8b440bbfbde1f9ad51be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbaf148e1dab39f25eaf2411f33833b') in 0.011492 seconds 
-  Import took 0.018857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_tree_shadow_caster.FBX
-  artifactKey: Guid(aa3789fa5b2252741b2c2b809f778801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/1x1_tree_shadow_caster.FBX using Guid(aa3789fa5b2252741b2c2b809f778801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '402964de35e120553149f96fd6f186e0') in 0.010189 seconds 
-  Import took 0.016317 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.170771 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x1_rock.FBX
-  artifactKey: Guid(51123ac22ccdb7144bda43c3040a3018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x1_rock.FBX using Guid(51123ac22ccdb7144bda43c3040a3018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2459522637ad414f0ac196a812ee78') in 0.016767 seconds 
-  Import took 0.024838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.050307 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x1_rock_shadow_caster.FBX
-  artifactKey: Guid(5d44c783794320049a87304a1d03cf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x1_rock_shadow_caster.FBX using Guid(5d44c783794320049a87304a1d03cf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acbf795ca3b54f818f6980fe43f8255d') in 0.007247 seconds 
-  Import took 0.012189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.800794 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x1_scarecrow.FBX
-  artifactKey: Guid(a4323ee34824b9e4a9df22b865acc83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x1_scarecrow.FBX using Guid(a4323ee34824b9e4a9df22b865acc83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e779008d537233e76a8b7dfa90c63e') in 0.015500 seconds 
-  Import took 0.021903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x1_scarecrow_shadow_caster.FBX
-  artifactKey: Guid(db5c71d6856831f48ae271125a27f87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x1_scarecrow_shadow_caster.FBX using Guid(db5c71d6856831f48ae271125a27f87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20428222d6a9c492b6bd4f1f8090c6c5') in 0.010512 seconds 
-  Import took 0.017169 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.091499 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x2_bush.FBX
-  artifactKey: Guid(1bd4926f07169ea43b54c78866cdf386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x2_bush.FBX using Guid(1bd4926f07169ea43b54c78866cdf386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bab7b57c179d49cc1f0606ff9ab367') in 0.008163 seconds 
-  Import took 0.012055 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.837367 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x2_bush_shadow_caster.FBX
-  artifactKey: Guid(d2175e1e559501844b9cefe92f993b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x2_bush_shadow_caster.FBX using Guid(d2175e1e559501844b9cefe92f993b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1065efee210770e478142f11e002b9c4') in 0.012627 seconds 
-  Import took 0.019212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.281477 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x2_stump.FBX
-  artifactKey: Guid(b07498e9db9c54e48abe627655369199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/2x2_stump.FBX using Guid(b07498e9db9c54e48abe627655369199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc510b79bb3a249d8dd868a93289b331') in 0.016695 seconds 
-  Import took 0.023246 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.150895 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x1_fallen_tree.FBX
-  artifactKey: Guid(e457d0b395ef7794291507108ec658fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x1_fallen_tree.FBX using Guid(e457d0b395ef7794291507108ec658fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ddb71d9978fd628b686c7f721fdc23') in 0.010774 seconds 
-  Import took 0.018754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x1_fallen_tree_shadow_caster.FBX
-  artifactKey: Guid(4c447061825494d4db0dcc58126ed801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x1_fallen_tree_shadow_caster.FBX using Guid(4c447061825494d4db0dcc58126ed801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a490d8f93ad821467df2bc8e4cbf651') in 0.013444 seconds 
-  Import took 0.018681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.092649 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x1_mushrooms.FBX
-  artifactKey: Guid(0b804f74c4528c248b1d1137ae60af85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x1_mushrooms.FBX using Guid(0b804f74c4528c248b1d1137ae60af85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13eab089e5508c4ce01a86777c7786ba') in 0.016501 seconds 
-  Import took 0.029441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.065044 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x1_mushrooms_shadow_caster.FBX
-  artifactKey: Guid(df2261b5de3165a4fac5355b37a91964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x1_mushrooms_shadow_caster.FBX using Guid(df2261b5de3165a4fac5355b37a91964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02726237b300d6cd08c1d005e9cad092') in 0.008652 seconds 
-  Import took 0.012493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.200696 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x2_bush.FBX
-  artifactKey: Guid(548180bf08b75e44383e1aa0c16727d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x2_bush.FBX using Guid(548180bf08b75e44383e1aa0c16727d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f585a399347d0a3e95dabd832fb1e3') in 0.010757 seconds 
-  Import took 0.016245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x2_bush_shadow_caster.FBX
-  artifactKey: Guid(a4b760bc6a4c30b4ba2a3e6f75bd90d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x2_bush_shadow_caster.FBX using Guid(a4b760bc6a4c30b4ba2a3e6f75bd90d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc556e17f76d95968d9060e13794cfcb') in 0.012665 seconds 
-  Import took 0.016582 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.069758 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x2_rock.FBX
-  artifactKey: Guid(729f070bcbfaa994594cbabff2ec33f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x2_rock.FBX using Guid(729f070bcbfaa994594cbabff2ec33f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4750860f8db6bcea79d57588004b9b7a') in 0.008028 seconds 
-  Import took 0.012181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x3_ground.FBX
-  artifactKey: Guid(6b02f0b55bbc9284ea2165cb40139bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x3_ground.FBX using Guid(6b02f0b55bbc9284ea2165cb40139bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffbf361bf3c51b8466efdc08e1510b30') in 0.010184 seconds 
-  Import took 0.014433 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.384982 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x3_ground_shadow_caster.FBX
-  artifactKey: Guid(bd2e5a7e16d15f14693c892fcbefac80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/3x3_ground_shadow_caster.FBX using Guid(bd2e5a7e16d15f14693c892fcbefac80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7549511788708b559d550e49153979d2') in 0.011863 seconds 
-  Import took 0.017175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/4x4_pond_shadow_caster.FBX
-  artifactKey: Guid(3f0c2aebb348ed84fa1fd8487c6af800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/4x4_pond_shadow_caster.FBX using Guid(3f0c2aebb348ed84fa1fd8487c6af800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75f5bd04382fc50221fd0452622c2ab') in 0.010722 seconds 
-  Import took 0.015070 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/4x4_pond.FBX
-  artifactKey: Guid(1521a0db794e05f4daa7902cd89ee387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/4x4_pond.FBX using Guid(1521a0db794e05f4daa7902cd89ee387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e69bba0acd38bbf7f6e423a9208d4b') in 0.008285 seconds 
-  Import took 0.014547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.047448 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/obstacles/5x2_fallen_tree.FBX
-  artifactKey: Guid(c980cee77191f7045b2b2c771cf9eac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/obstacles/5x2_fallen_tree.FBX using Guid(c980cee77191f7045b2b2c771cf9eac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21bb9c03c49a0c7a28b1166725a4c8e4') in 0.006665 seconds 
-  Import took 0.010852 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.384239 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_body.FBX
-  artifactKey: Guid(9c7ae5c55a6e1594fb1a74aa0763effa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_body.FBX using Guid(9c7ae5c55a6e1594fb1a74aa0763effa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227c0284dc77f6c3774f628d355033f3') in 0.044846 seconds 
-  Import took 0.049152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_body_v2.FBX
-  artifactKey: Guid(1ffe4e4a8f703b847a577cecae9976b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_body_v2.FBX using Guid(1ffe4e4a8f703b847a577cecae9976b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d136901dc4faa8e4eb4b0c5f8ce45c') in 0.061325 seconds 
-  Import took 0.064829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.300296 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_head.FBX
-  artifactKey: Guid(33e82eed20cc3764cabd0831d579249b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_head.FBX using Guid(33e82eed20cc3764cabd0831d579249b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '346e15984b956a954bdc1d14e3103e6d') in 0.052060 seconds 
-  Import took 0.058109 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_tail.FBX
-  artifactKey: Guid(d65362cec7bad1e4a92fad067edbf795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_tail.FBX using Guid(d65362cec7bad1e4a92fad067edbf795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98707a0cda30d27b5dfb30d36068f26') in 0.060656 seconds 
-  Import took 0.064305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_head_shadow_caster.FBX
-  artifactKey: Guid(bcb947c04c53e7b4da9f5fc37863fb41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/blue_racer/blue_racer_head_shadow_caster.FBX using Guid(bcb947c04c53e7b4da9f5fc37863fb41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8389b3edd2c78cdfd04b788b5e103d8') in 0.029091 seconds 
-  Import took 0.034751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.569184 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/butterfly/butterfly.FBX
-  artifactKey: Guid(61e0979bd9dfb41439b2fd42ea94424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/butterfly/butterfly.FBX using Guid(61e0979bd9dfb41439b2fd42ea94424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea90e5e9f9b1ad03717518d436af21c9') in 0.010090 seconds 
-  Import took 0.015654 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.114546 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/butterfly/butterfly_shadow_caster.FBX
-  artifactKey: Guid(99538a3302838ca42afdcb4fc9813d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/butterfly/butterfly_shadow_caster.FBX using Guid(99538a3302838ca42afdcb4fc9813d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980a2280e51a660c050f77b6f36aac55') in 0.016592 seconds 
-  Import took 0.025103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.124173 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/coin/coin.FBX
-  artifactKey: Guid(82b3ddb839a51ad4abccb6f12e167310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/coin/coin.FBX using Guid(82b3ddb839a51ad4abccb6f12e167310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffda1bc66dd6b1666ad78d221de3e392') in 0.008618 seconds 
-  Import took 0.013387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.310440 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/coin/coin_shadow_caster.FBX
-  artifactKey: Guid(1b16e28efe359f24f82f0e5a70f518ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/coin/coin_shadow_caster.FBX using Guid(1b16e28efe359f24f82f0e5a70f518ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97b659007b944d438311d2e7f2154a6') in 0.011872 seconds 
-  Import took 0.020084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.069829 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/powerup_eggs/egg.FBX
-  artifactKey: Guid(61424d72f9f56754d9e7e4a8f18dbc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/powerup_eggs/egg.FBX using Guid(61424d72f9f56754d9e7e4a8f18dbc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd866f93a020e76b0ce6f1d3197d27c91') in 0.006870 seconds 
-  Import took 0.012614 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/powerup_eggs/egg_shadow_caster.FBX
-  artifactKey: Guid(06da00778ca2fca44b6f0aea3c093aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/powerup_eggs/egg_shadow_caster.FBX using Guid(06da00778ca2fca44b6f0aea3c093aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e68eed13311eb83bde38867ade6523') in 0.010676 seconds 
-  Import took 0.014181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.238087 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/frog_green/frog_green.FBX
-  artifactKey: Guid(90255d3cbd608fd49ba4864f1424f3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/frog_green/frog_green.FBX using Guid(90255d3cbd608fd49ba4864f1424f3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394c1463b10861c2d84e1a3dabc9f24b') in 0.008567 seconds 
-  Import took 0.012960 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/frog_green/frog_shadow_caster.FBX
-  artifactKey: Guid(d157ef3742e60994faa7a4ef7186c4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/frog_green/frog_shadow_caster.FBX using Guid(d157ef3742e60994faa7a4ef7186c4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ceab0b969b5d9d3008d6f098e60bb6') in 0.009099 seconds 
-  Import took 0.012191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.798743 seconds.
-  path: Assets/SimpleEnviroment/Models/glow_plane/glow_plane.FBX
-  artifactKey: Guid(5fdfdefcb3b13234fb6d3035adcef700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/glow_plane/glow_plane.FBX using Guid(5fdfdefcb3b13234fb6d3035adcef700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edbff22dee885659b78bd9a9ad71d950') in 0.039933 seconds 
-  Import took 0.047081 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_corner_fence.FBX
-  artifactKey: Guid(07581f48b12bb4048b409048e458900b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_corner_fence.FBX using Guid(07581f48b12bb4048b409048e458900b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bda7264ba92361041ba269aa23d876f') in 0.008991 seconds 
-  Import took 0.013212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.226195 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_end_fence.FBX
-  artifactKey: Guid(50464158559ae914ea4cc8f7d2d076d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_end_fence.FBX using Guid(50464158559ae914ea4cc8f7d2d076d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f855dbc851363020feea491fc7a4f7b') in 0.012226 seconds 
-  Import took 0.019087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.134340 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_fence.FBX
-  artifactKey: Guid(d15108ec07871f242be58dc6ba7ef68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_fence.FBX using Guid(d15108ec07871f242be58dc6ba7ef68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41af3dd9e0ee20e3480e159720ea2b7b') in 0.009310 seconds 
-  Import took 0.017201 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.046105 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_inside_fence.FBX
-  artifactKey: Guid(242ce3063991f1e4f991e0e1e82f5d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_inside_fence.FBX using Guid(242ce3063991f1e4f991e0e1e82f5d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a214f0ab8c49782e9e4f863a09fde97f') in 0.007771 seconds 
-  Import took 0.011920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.037043 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_t-section_fence.FBX
-  artifactKey: Guid(0fd5be32d067f7c47a48edbaa349aef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x1_t-section_fence.FBX using Guid(0fd5be32d067f7c47a48edbaa349aef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a241440196be8f3162f5f9743d2f5d') in 0.011173 seconds 
-  Import took 0.015510 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.157754 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x2_fence.FBX
-  artifactKey: Guid(220b8854fe61f534ea52ae03061910e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x2_fence.FBX using Guid(220b8854fe61f534ea52ae03061910e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8bfd1b6857cb6ef0e30f545b06038fa') in 0.013711 seconds 
-  Import took 0.021845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.185961 seconds.
-  path: Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x3_fence.FBX
-  artifactKey: Guid(8e9b8bf59e3ec794e8403daa7d5f1fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/theme_forest/fences/green_1x3_fence.FBX using Guid(8e9b8bf59e3ec794e8403daa7d5f1fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dbb573fe22f49d28b1c8c7437ef120d') in 0.015294 seconds 
-  Import took 0.022175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.043960 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_body_v2.FBX
-  artifactKey: Guid(5ec297cc131de0446b7c9ccce392b15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_body_v2.FBX using Guid(5ec297cc131de0446b7c9ccce392b15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c916c590dcc50700c1566ec5c85ecd2') in 0.043400 seconds 
-  Import took 0.048255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_body.FBX
-  artifactKey: Guid(92b3a151567b25e4bad56a4edf6b3dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_body.FBX using Guid(92b3a151567b25e4bad56a4edf6b3dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5037802c60af0ab2759a6edd05311b0') in 0.051355 seconds 
-  Import took 0.055227 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.268217 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_head.FBX
-  artifactKey: Guid(7d26698a3569be64ca33e0ab7f38191f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_head.FBX using Guid(7d26698a3569be64ca33e0ab7f38191f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0c96d492a12a1a0918c44150d6593b') in 0.052117 seconds 
-  Import took 0.059348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_head_shadow_caster.FBX
-  artifactKey: Guid(5d626ea6006ba144fa771a2c1778555c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_head_shadow_caster.FBX using Guid(5d626ea6006ba144fa771a2c1778555c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ffa98f2ce0da28139b24b7528f1959') in 0.025432 seconds 
-  Import took 0.031430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_tail_shadow_caster.FBX
-  artifactKey: Guid(8f12adc0553503e4e89644b65d985827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_tail_shadow_caster.FBX using Guid(8f12adc0553503e4e89644b65d985827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78198f678f64777410fe4d93a096647c') in 0.034541 seconds 
-  Import took 0.038508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/limousine/limousine_body_shadow_caster.FBX
-  artifactKey: Guid(97f8cff629b73de44b0eb911e5870a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/limousine/limousine_body_shadow_caster.FBX using Guid(97f8cff629b73de44b0eb911e5870a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beadf178215a8ec9e9dff84fd1b05284') in 0.029913 seconds 
-  Import took 0.034044 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000382 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/limousine/limousine_head.FBX
-  artifactKey: Guid(0b16e397b2563b247af9c0dfe9bc07f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/limousine/limousine_head.FBX using Guid(0b16e397b2563b247af9c0dfe9bc07f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677bf0e60a573b745680a61d3b1aa0a4') in 0.062614 seconds 
-  Import took 0.066263 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/limousine/limousine_body.FBX
-  artifactKey: Guid(4189d51eb584e80478a11755e3f53aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/limousine/limousine_body.FBX using Guid(4189d51eb584e80478a11755e3f53aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd189a8e03f33424bf5818ea4f03f5ec2') in 0.056879 seconds 
-  Import took 0.060333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_tail.FBX
-  artifactKey: Guid(1905aa75186664a4b805b0e128c7b13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/green_snake/green_snake_tail.FBX using Guid(1905aa75186664a4b805b0e128c7b13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1030fb9cbfd384f93dafac53a5d41d5') in 0.047431 seconds 
-  Import took 0.050956 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.811123 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/limousine/limousine_head_shadow_caster.FBX
-  artifactKey: Guid(74071bad7e16a0f4f8be75e5821d5853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/limousine/limousine_head_shadow_caster.FBX using Guid(74071bad7e16a0f4f8be75e5821d5853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad1697e1f82c2195e44111fff603753') in 0.025001 seconds 
-  Import took 0.037328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.052057 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/limousine/limousine_tail.FBX
-  artifactKey: Guid(580df1da625f1d74b99218f5b06e0dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/limousine/limousine_tail.FBX using Guid(580df1da625f1d74b99218f5b06e0dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d036adb564ff97fbffaf4308e9f106') in 0.039940 seconds 
-  Import took 0.044054 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/SimpleEnviroment/Models/snakes/limousine/limousine_tail_shadow_caster.FBX
-  artifactKey: Guid(63cf8e4d75e357e48a907f4390861800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/snakes/limousine/limousine_tail_shadow_caster.FBX using Guid(63cf8e4d75e357e48a907f4390861800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3907c5f5d65e804f39f3890eb3f68ba7') in 0.026216 seconds 
-  Import took 0.031430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.167579 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/fruit_orange/fruit_orange.FBX
-  artifactKey: Guid(4da67f57d2df9ff468ca0a9d3c982515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/fruit_orange/fruit_orange.FBX using Guid(4da67f57d2df9ff468ca0a9d3c982515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e65dd897b0ab5b087cf7176be5a040') in 0.013476 seconds 
-  Import took 0.019883 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.391515 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/fruit_orange/fruit_orange_shadow_caster.FBX
-  artifactKey: Guid(74398347912e1c047acbfe6813fa4e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/fruit_orange/fruit_orange_shadow_caster.FBX using Guid(74398347912e1c047acbfe6813fa4e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf8276d40aab0aca69df34e10a49ff2') in 0.009914 seconds 
-  Import took 0.016481 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.122841 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/fruit_pear/fruit_pear.FBX
-  artifactKey: Guid(2ecc99cc17e16004caf5a14a8dfdf263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/fruit_pear/fruit_pear.FBX using Guid(2ecc99cc17e16004caf5a14a8dfdf263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efc48facdf8d5cff0aa9886f3428926') in 0.006689 seconds 
-  Import took 0.010498 seconds .
+  Time since last request: 0.000135 seconds.
+  path: Assets/Prefabs/snake_head.prefab
+  artifactKey: Guid(f58eb22ad00eeee48b209e919836de12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/snake_head.prefab using Guid(f58eb22ad00eeee48b209e919836de12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17ba42155abdb8aa746fc468e4894b3') in 0.012575 seconds 
+  Import took 0.015293 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000194 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/fruit_pear/fruit_pear_shadow_caster.FBX
-  artifactKey: Guid(c128b604d6bb8244191b2464fa16c449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/fruit_pear/fruit_pear_shadow_caster.FBX using Guid(c128b604d6bb8244191b2464fa16c449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80431d05334720a0fe21c9b3a9e0807e') in 0.007967 seconds 
-  Import took 0.011970 seconds .
+  path: Assets/Prefabs/snake_body_with_collider Variant.prefab
+  artifactKey: Guid(fe01f8b09ad4a584abf9d16ff09785c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/snake_body_with_collider Variant.prefab using Guid(fe01f8b09ad4a584abf9d16ff09785c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96caf206d9e98cedcbaf1ec2cb6151e3') in 0.014567 seconds 
+  Import took 0.017677 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.146478 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_life.FBX
-  artifactKey: Guid(5525ef8eee015b1419c78e6a7466e1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_life.FBX using Guid(5525ef8eee015b1419c78e6a7466e1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9f93645ff9d135644011fe4d7dbcc5') in 0.013822 seconds 
-  Import took 0.020625 seconds .
+  Time since last request: 0.000175 seconds.
+  path: Assets/Prefabs/snake.prefab
+  artifactKey: Guid(03ace033d1348724cbc77d22b1cae145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/snake.prefab using Guid(03ace033d1348724cbc77d22b1cae145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6babf3be04bddf91d41c5bd5997b825') in 0.007864 seconds 
+  Import took 0.011116 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_hourglass.FBX
-  artifactKey: Guid(224611d785f53c94886bb0530f89d213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_hourglass.FBX using Guid(224611d785f53c94886bb0530f89d213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1217c76dbd2b28f5ad8d63c3bac6d4f') in 0.017433 seconds 
-  Import took 0.026964 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.767931 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_shield.FBX
-  artifactKey: Guid(c6d3d1c0a7663854f9d18386818ceb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_shield.FBX using Guid(c6d3d1c0a7663854f9d18386818ceb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d82c80587bafc16664bd95d53eabc6f') in 0.022551 seconds 
-  Import took 0.032131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.163777 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_life_shadow_caster.FBX
-  artifactKey: Guid(b47d2cffb54eccb48aa95eac0f1fa473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_life_shadow_caster.FBX using Guid(b47d2cffb54eccb48aa95eac0f1fa473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '396877b9205b1c6ebafff83499903f83') in 0.010405 seconds 
-  Import took 0.017114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.850566 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_shield_shadow_caster.FBX
-  artifactKey: Guid(5aacb233f6870b64992b4a9aae5d553c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_shield_shadow_caster.FBX using Guid(5aacb233f6870b64992b4a9aae5d553c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51e0df6a9d1b515b8ad844a7cf0f824e') in 0.013905 seconds 
-  Import took 0.020880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.797532 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_hourglass_shadow_caster.FBX
-  artifactKey: Guid(915b7b060cd9b0f4ab898b332061e5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/powerup_items/powerup_hourglass_shadow_caster.FBX using Guid(915b7b060cd9b0f4ab898b332061e5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603329d1008011f27c856f32197b255e') in 0.017448 seconds 
-  Import took 0.024239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.276543 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/soccer_ball/soccer_ball.FBX
-  artifactKey: Guid(96b23ac73c77a4a49a264f2b1959f0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/soccer_ball/soccer_ball.FBX using Guid(96b23ac73c77a4a49a264f2b1959f0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1a4b2316f32e5a4a2aff682a0ff59b') in 0.015385 seconds 
-  Import took 0.021378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/soccer_gate/soccer_gate.FBX
-  artifactKey: Guid(be87ca1c5bdfd4d45bc3dbac5c16353a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/soccer_gate/soccer_gate.FBX using Guid(be87ca1c5bdfd4d45bc3dbac5c16353a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f33c573341023912f4f2fe9c6b7e1e3') in 0.011754 seconds 
-  Import took 0.016569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.522656 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/spike_trap/spike_trap.FBX
-  artifactKey: Guid(5563150fedb2c954e9838281a9a2d127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/spike_trap/spike_trap.FBX using Guid(5563150fedb2c954e9838281a9a2d127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e119146f613e8f6db2ad9a6b1acbb716') in 0.009205 seconds 
-  Import took 0.014318 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/spike_trap/spike_trap_base.FBX
-  artifactKey: Guid(d02cbca595c1761409e3be74533eada7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/spike_trap/spike_trap_base.FBX using Guid(d02cbca595c1761409e3be74533eada7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1240ab3f708ce7b9ddfd7e6fb55b6133') in 0.010205 seconds 
-  Import took 0.014939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.067159 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/switcher/switcher.FBX
-  artifactKey: Guid(04f15c417f6b75a40a10face719f11c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/switcher/switcher.FBX using Guid(04f15c417f6b75a40a10face719f11c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7107f9c3cb33979fd71678506db56c63') in 0.007101 seconds 
-  Import took 0.012618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.094829 seconds.
-  path: Assets/SimpleEnviroment/Models/game_objects/switcher/switcher_off.FBX
-  artifactKey: Guid(9d010cd6d67f09e479c83e1df03a3ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleEnviroment/Models/game_objects/switcher/switcher_off.FBX using Guid(9d010cd6d67f09e479c83e1df03a3ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d588f038e72b60d051f1da24b329c80') in 0.007246 seconds 
-  Import took 0.012154 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.4 MB.
-System memory in use after: 62.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2858.
-Total: 3.959100 ms (FindLiveObjects: 0.259700 ms CreateObjectMapping: 0.094300 ms MarkObjects: 3.582200 ms  DeleteObjects: 0.022100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 30.415500 seconds.
-  path: Assets/Prefabs/fruit_apple.prefab
-  artifactKey: Guid(da851ee80f4050743985b42017d0f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/fruit_apple.prefab using Guid(da851ee80f4050743985b42017d0f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8ab4feef0a6dcefc4d96c8ed029eeb') in 0.009725 seconds 
-  Import took 0.014273 seconds .
+  Time since last request: 6.311634 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.005077 seconds 
+  Import took 0.008166 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

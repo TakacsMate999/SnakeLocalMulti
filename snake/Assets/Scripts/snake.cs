@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Assets;
+using UnityEngine.SceneManagement;
+using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
+using System.Threading;
 
 //Ez kezeli jelenleg a kígyó mozgását. Eltárolja a jelenlegi sejteket és minden 100. update hívásra lépteti õket
 public class Snake : MonoBehaviour
@@ -12,6 +15,7 @@ public class Snake : MonoBehaviour
     //A test sejtjének a prefabja. Ennek a segítségével tudunk újat létrehozni.
     //nem biztos, hogy kell
     public GameObject segmentPrefab;
+    public static GameHandler gameHandler;
 
     Head head;
     Tail tail;
@@ -47,12 +51,13 @@ public class Snake : MonoBehaviour
         InvokeRepeating("MoveCells", 0, speed);
     }
 
-    public static Snake CreateSnake(int x, int y, GameObject snakePrefab)
+    public static Snake CreateSnake(GameHandler g, int x, int y, GameObject snakePrefab)
     {
         Vector3Int headPos = new Vector3Int(x, y, -1);
         Vector3Int tailPos = new Vector3Int(x, y, 0);
         Snake s = Instantiate(snakePrefab).GetComponent<Snake>();
         s.createHeadTail(headPos, tailPos);
+        gameHandler = g;
 
         return s;
     }
@@ -126,5 +131,7 @@ public class Snake : MonoBehaviour
         }
 
         Destroy(gameObject);
+        gameHandler.EndGame();
     }
+
 }

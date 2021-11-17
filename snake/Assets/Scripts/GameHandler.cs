@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class GameHandler : MonoBehaviour
 {
@@ -27,10 +29,16 @@ public class GameHandler : MonoBehaviour
         Snake.speed = speed;
         Snake.startingSegmentCount = startingSegmentCount;
 
-        Snake.CreateSnake(snake1StartPos.x, snake1StartPos.y, snakePrefab).setControllKeys("W", "A", "S", "D");
-        Snake.CreateSnake(snake2StartPos.x, snake2StartPos.y, snakePrefab).setControllKeys("I", "J", "K", "L");
+        Snake.CreateSnake(this,snake1StartPos.x, snake1StartPos.y, snakePrefab).setControllKeys("W", "A", "S", "D");
+        Snake.CreateSnake(this,snake2StartPos.x, snake2StartPos.y, snakePrefab).setControllKeys("I", "J", "K", "L");
     }
 
+    public void EndGame()
+    {
+        SoundManager.PlaySound("gameOver");
+        Thread.Sleep(2000);
+        UnitySceneManager.LoadScene("GameOver");
+    }
     // Update is called once per frame
     void Update()
     {
