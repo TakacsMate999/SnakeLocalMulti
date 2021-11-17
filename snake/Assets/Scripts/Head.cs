@@ -94,7 +94,6 @@ public class Head : Cell
             if (target.tag == Tags.Apple)
             {
                 SoundManager.PlaySound("apple");
-                //snake.CreateSegment();
                 snake.createCellSignal = true;
                 Apple.createApple();
                 Destroy(target.gameObject);
@@ -103,14 +102,11 @@ public class Head : Cell
             if (target.tag == Tags.Snake)
             {
                 snake.Die();
-                
-                
             }
             //Kígyó hozzáér a falhoz
             if (target.tag == Tags.Wall)
             {
                 snake.Die();
-               
             }
         }
         

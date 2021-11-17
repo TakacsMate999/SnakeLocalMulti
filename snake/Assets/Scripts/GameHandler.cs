@@ -10,6 +10,7 @@ public class GameHandler : MonoBehaviour
     public GameObject applePrefab;
     public GameObject particle;
 
+    bool gameOver = false;
     public static int startingSegmentCount = 3;
     public static float speed = 0.2f;
     public static int winCon = 20;
@@ -35,9 +36,14 @@ public class GameHandler : MonoBehaviour
 
     public void EndGame()
     {
-        SoundManager.PlaySound("gameOver");
-        Thread.Sleep(2000);
-        UnitySceneManager.LoadScene("GameOver");
+        if (!gameOver)
+        {
+            SoundManager.PlaySound("gameOver");
+            gameOver = true;
+            Thread.Sleep(2000);
+            UnitySceneManager.LoadScene("GameOver");
+        }
+        
     }
     // Update is called once per frame
     void Update()

@@ -4,11 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
-public class RestartGame : MonoBehaviour
+public class EndGame : MonoBehaviour
 {
-    // Start is called before the first frame update
     public void Restart()
     {
         UnitySceneManager.LoadScene("GameScene");
+    }
+
+    public void LoadMenu()
+    {
+        UnitySceneManager.LoadScene("Menu");
     }
 }

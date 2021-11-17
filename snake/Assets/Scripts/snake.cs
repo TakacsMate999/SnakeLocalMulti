@@ -24,6 +24,8 @@ public class Snake : MonoBehaviour
 
     public bool createCellSignal = false;
 
+    public bool isAlive = true;
+
 
     //Kezdõ sejt szám
     public static int startingSegmentCount;
@@ -118,20 +120,25 @@ public class Snake : MonoBehaviour
 
     public void Die()
     {
-        head.DestroyGameObject();
-        foreach(Cell c in cells)
+        if (isAlive)
         {
-            c.DestroyGameObject();
+            isAlive = false;
+            gameHandler.EndGame();
+            head.DestroyGameObject();
+            foreach (Cell c in cells)
+            {
+                c.DestroyGameObject();
+            }
+            tail.DestroyGameObject();
+            print("Rip in peace");
+            foreach (Cell cell in cells)
+            {
+                Destroy(cell.gameObject);
+            }
+            Destroy(gameObject);
+            
         }
-        tail.DestroyGameObject();
-        print("Rip in peace");
-        foreach(Cell cell in cells)
-        {
-            Destroy(cell.gameObject);
-        }
-
-        Destroy(gameObject);
-        gameHandler.EndGame();
+        
     }
 
 }
