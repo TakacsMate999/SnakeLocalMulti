@@ -17,24 +17,30 @@ public class GameHandler : MonoBehaviour
     public static Vector2Int snake1StartPos = new Vector2Int(0, 0);
     public static Vector2Int snake2StartPos = new Vector2Int(10, 10);
 
-    
+    public static List<Snake> snakes;
 
     public 
     // Start is called before the first frame update
     void Start()
     {
+        snakes = new List<Snake>();
         
         Apple.Initialize(14, 14, applePrefab, particle);
-        Apple.createApple();
+        Apple.CreateApple();
 
         Snake.speed = speed;
         Snake.startingSegmentCount = startingSegmentCount;
 
-        Snake.CreateSnake(this,snake1StartPos.x, snake1StartPos.y, snakePrefab).setControllKeys("W", "A", "S", "D");
-        Snake.CreateSnake(this,snake2StartPos.x, snake2StartPos.y, snakePrefab).setControllKeys("I", "J", "K", "L");
+        Snake s1 = Snake.CreateSnake(this, snake1StartPos.x, snake1StartPos.y, snakePrefab);
+        s1.SetControllKeys("W", "A", "S", "D");
+        snakes.Add(s1);
+
+        Snake s2 = Snake.CreateSnake(this, snake2StartPos.x, snake2StartPos.y, snakePrefab);
+        s2.SetControllKeys("I", "J", "K", "L");
+        snakes.Add(s2);
     }
 
-    public void EndGame()
+    public void EndTheGame()
     {
         if (!gameOver)
         {
@@ -45,9 +51,22 @@ public class GameHandler : MonoBehaviour
         }
         
     }
+
+    public static int getSnakeIdx(Snake s)
+    {
+        Debug.Log(snakes.IndexOf(s));
+        return snakes.IndexOf(s);
+    }
     // Update is called once per frame
     void Update()
     {
-        //Vizsgáljuk, hogy nyertünk el
+        for(int i = 0; i < snakes.Count; i++)
+        {
+            if(snakes[i].segmentCount >= winCon)
+            {
+                EndGame.winner = i;
+                EndTheGame();
+            }    
+        }
     }
 }

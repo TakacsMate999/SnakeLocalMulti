@@ -31,7 +31,7 @@ public class Snake : MonoBehaviour
     public static int startingSegmentCount;
 
     //Aktuális sejt szám. Jelenleg csak updatelem, de nem használom. Majd a pontszámításnál lesz rá szükség.
-    public static int segmentCount = 0;
+    public int segmentCount = 0;
 
     public static float speed = 0.2f;
 
@@ -39,7 +39,7 @@ public class Snake : MonoBehaviour
 
     Cell lastSegment;
 
-    public void setControllKeys(string up, string left, string down, string right)
+    public void SetControllKeys(string up, string left, string down, string right)
     {
         head.setControllKeys(up, left, down, right);
     }
@@ -58,13 +58,13 @@ public class Snake : MonoBehaviour
         Vector3Int headPos = new Vector3Int(x, y, -1);
         Vector3Int tailPos = new Vector3Int(x, y, 0);
         Snake s = Instantiate(snakePrefab).GetComponent<Snake>();
-        s.createHeadTail(headPos, tailPos);
+        s.CreateHeadTail(headPos, tailPos);
         gameHandler = g;
 
         return s;
     }
 
-    public void createHeadTail(Vector3Int hpos, Vector3Int tpos)
+    public void CreateHeadTail(Vector3Int hpos, Vector3Int tpos)
     {
         headObject = Instantiate(headPrefab, hpos + gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0 ,0)), gameObject.transform);
         head = headObject.GetComponent<Head>();
@@ -89,7 +89,7 @@ public class Snake : MonoBehaviour
         cell.Current = new MovementData(Movement.STOP, lastSegment.Current.Rotation);
         cell.Previous = lastSegment.Previous;
         seg.transform.parent = gameObject.transform;
-        addCell(cell);
+        AddCell(cell);
         lastSegment = cell;
         tail.Source = lastSegment;
         
@@ -113,7 +113,7 @@ public class Snake : MonoBehaviour
         
     }
 
-    public void addCell(Body_Cell cell)
+    public void AddCell(Body_Cell cell)
     {
         cells.Add(cell);
     }
@@ -123,7 +123,8 @@ public class Snake : MonoBehaviour
         if (isAlive)
         {
             isAlive = false;
-            gameHandler.EndGame();
+            EndGame.winner = (1 - GameHandler.getSnakeIdx(this));
+            gameHandler.EndTheGame();
             head.DestroyGameObject();
             foreach (Cell c in cells)
             {

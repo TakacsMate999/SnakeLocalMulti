@@ -16,12 +16,6 @@ public class SoundManager : MonoBehaviour
         audiosrc = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public static void PlaySound(string s)
     {
         if (s == "apple")

@@ -23,7 +23,7 @@ public class Apple : MonoBehaviour
         particle = _particle;
     }
 
-    public static void createApple()
+    public static void CreateApple()
     {
         
         float x = Random.Range(0, xSize);
@@ -38,14 +38,14 @@ public class Apple : MonoBehaviour
         app.name = "apple";
         if (counter != 0&&position!=null)
         {
-            createParticle(position);
+            CreateParticle(position);
         }
         counter++;
     }
 
     
     // Start is called before the first frame update
-    public static void createParticle(Vector3 v)
+    public static void CreateParticle(Vector3 v)
     {
         if(currentParticle != null)
         {

@@ -35,7 +35,7 @@ namespace Assets
         {
             if (target.tag == Tags.Apple)
             {
-                Apple.createApple();
+                Apple.CreateApple();
                 Destroy(target.gameObject);
             }
         }
