@@ -52,6 +52,5 @@ public class Apple : MonoBehaviour
             Destroy(currentParticle);
         }
         currentParticle = Instantiate(particle, v, particle.transform.rotation);
-        Debug.Log($"Particle created at{v.x},{v.y},{v.z}");
     }
 }

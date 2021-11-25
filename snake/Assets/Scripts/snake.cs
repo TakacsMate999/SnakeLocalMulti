@@ -17,6 +17,8 @@ public class Snake : MonoBehaviour
     public GameObject segmentPrefab;
     public static GameHandler gameHandler;
 
+    public int score;
+
     Head head;
     Tail tail;
     GameObject headObject;
@@ -50,6 +52,7 @@ public class Snake : MonoBehaviour
         {
             CreateSegment();
         }
+        score = 0;
         InvokeRepeating("MoveCells", 0, speed);
     }
 
@@ -116,6 +119,7 @@ public class Snake : MonoBehaviour
     public void AddCell(Body_Cell cell)
     {
         cells.Add(cell);
+        gameHandler.AddScore(this);
     }
 
     public void Die()

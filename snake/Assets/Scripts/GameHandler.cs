@@ -24,7 +24,7 @@ public class GameHandler : MonoBehaviour
     void Start()
     {
         snakes = new List<Snake>();
-        
+        ScoreManager.ResetScores();
         Apple.Initialize(14, 14, applePrefab, particle);
         Apple.CreateApple();
 
@@ -48,6 +48,7 @@ public class GameHandler : MonoBehaviour
             gameOver = true;
             Thread.Sleep(2000);
             UnitySceneManager.LoadScene("GameOver");
+            
         }
         
     }
@@ -68,5 +69,10 @@ public class GameHandler : MonoBehaviour
                 EndTheGame();
             }    
         }
+    }
+
+    public void AddScore(Snake s)
+    {
+        ScoreManager.AddPoint(snakes.IndexOf(s));
     }
 }
