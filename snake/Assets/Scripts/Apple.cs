@@ -27,25 +27,22 @@ public class Apple : MonoBehaviour
 
     public static void CreateApple()
     {
-        if(appleCount <= 1)
+        float x = Random.Range(0, xSize);
+        x -= 8.48f;
+
+        float y = Random.Range(0, ySize);
+        y -= 6f;
+
+        Vector3 position = new Vector3(x, y, 0);
+
+        GameObject app = Instantiate(apple_prefab, position, Quaternion.identity);
+        app.name = "apple";
+        if (counter != 0 && position != null)
         {
-            float x = Random.Range(0, xSize);
-            x -= 8.48f;
-
-            float y = Random.Range(0, ySize);
-            y -= 6f;
-
-            Vector3 position = new Vector3(x, y, 0);
-
-            GameObject app = Instantiate(apple_prefab, position, Quaternion.identity);
-            app.name = "apple";
-            if (counter != 0 && position != null)
-            {
-                CreateParticle(position);
-            }
-            appleCount++;
-            counter++;
+            CreateParticle(position);
         }
+        appleCount++;
+        counter++;
     }
 
     
