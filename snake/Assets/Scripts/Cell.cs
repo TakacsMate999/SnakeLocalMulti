@@ -25,10 +25,10 @@ namespace Assets
 
         }
 
-        public void DestroyGameObject()
-        {
-            Destroy(this);
-        }
+        //public void DestroyGameObject()
+        //{
+        //    Destroy(this);
+        //}
 
         //Elpusztítjuk az almát ha olyan helyre kerül ahol kígyó van
         private void OnTriggerEnter2D(Collider2D target)
@@ -36,6 +36,7 @@ namespace Assets
             if (target.tag == Tags.Apple)
             {
                 Apple.CreateApple();
+                Apple.appleCount -= 1;
                 Destroy(target.gameObject);
             }
         }

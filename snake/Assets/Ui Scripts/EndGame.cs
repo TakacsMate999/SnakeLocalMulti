@@ -9,6 +9,7 @@ public class EndGame : MonoBehaviour
 {
     public static int winner = -1;
     public GameObject text;
+    public static GameHandler gameHandler;
 
     public void Refresh()
     {
@@ -28,11 +29,13 @@ public class EndGame : MonoBehaviour
 
     public void Restart()
     {
-        UnitySceneManager.LoadScene("GameScene");
+        gameHandler.StartGame();
+        UnitySceneManager.LoadScene(1);
     }
 
     public void LoadMenu()
     {
-        UnitySceneManager.LoadScene("Menu");
+        gameHandler.StartGame();
+        UnitySceneManager.LoadScene(0);
     }
 }

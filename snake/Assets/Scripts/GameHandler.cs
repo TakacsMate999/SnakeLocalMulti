@@ -20,9 +20,13 @@ public class GameHandler : MonoBehaviour
     public static List<Snake> snakes;
 
     public 
-    // Start is called before the first frame update
-    void Start()
+    // Starting a new game
+    void StartGame()
     {
+        EndGame.gameHandler = this;
+
+        gameOver = false;
+
         snakes = new List<Snake>();
         ScoreManager.ResetScores();
         Apple.Initialize(14, 14, applePrefab, particle);
@@ -40,6 +44,11 @@ public class GameHandler : MonoBehaviour
         snakes.Add(s2);
     }
 
+    public void Start()
+    {
+        StartGame();
+    }
+
     public void EndTheGame()
     {
         if (!gameOver)
@@ -47,7 +56,7 @@ public class GameHandler : MonoBehaviour
             SoundManager.PlaySound("gameOver");
             gameOver = true;
             Thread.Sleep(2000);
-            UnitySceneManager.LoadScene("GameOver");
+            UnitySceneManager.LoadScene(2);
             
         }
         
@@ -58,7 +67,7 @@ public class GameHandler : MonoBehaviour
         Debug.Log(snakes.IndexOf(s));
         return snakes.IndexOf(s);
     }
-    // Update is called once per frame
+
     void Update()
     {
         for(int i = 0; i < snakes.Count; i++)

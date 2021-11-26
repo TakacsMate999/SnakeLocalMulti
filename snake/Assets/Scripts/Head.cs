@@ -96,6 +96,7 @@ public class Head : Cell
                 SoundManager.PlaySound("apple");
                 snake.createCellSignal = true;
                 Apple.CreateApple();
+                Apple.appleCount -= 1;
                 Destroy(target.gameObject);
             }
             //Kígyó hozzáér magához

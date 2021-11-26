@@ -129,21 +129,20 @@ public class Snake : MonoBehaviour
             isAlive = false;
             EndGame.winner = (1 - GameHandler.getSnakeIdx(this));
             gameHandler.EndTheGame();
-            head.DestroyGameObject();
-            foreach (Cell c in cells)
-            {
-                c.DestroyGameObject();
-            }
-            tail.DestroyGameObject();
+            //head.DestroyGameObject();
+            //foreach (Cell c in cells)
+            //{
+            //    c.DestroyGameObject();
+            //}
+            //tail.DestroyGameObject();
             print("Rip in peace");
             foreach (Cell cell in cells)
             {
                 Destroy(cell.gameObject);
             }
             Destroy(gameObject);
-            
-        }
-        
+            Destroy(this);
+        }        
     }
 
 }
