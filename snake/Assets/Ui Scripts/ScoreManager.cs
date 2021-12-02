@@ -7,15 +7,19 @@ public class ScoreManager : MonoBehaviour
 {
     public Text score1Text;
     public Text score2Text;
+    public Text maxScoreText;
 
-    static int score1 = 0 - GameHandler.startingSegmentCount;
-    static int score2 = 0 - GameHandler.startingSegmentCount;
+    static int score1 = 0;
+    static int score2 = 0;
+    static int maxScore = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         score1Text.text = score1.ToString();
         score2Text.text = score2.ToString();
+        maxScore = GameHandler.winCon;
+        maxScoreText.text = maxScore.ToString();
 
     }
 
@@ -24,6 +28,7 @@ public class ScoreManager : MonoBehaviour
     {
         score1Text.text = score1.ToString();
         score2Text.text = score2.ToString();
+       
     }
 
     public static void AddPoint(int which)
@@ -40,7 +45,7 @@ public class ScoreManager : MonoBehaviour
     }
     public static void ResetScores()
     {
-        score1 = 0 - GameHandler.startingSegmentCount;
-        score2 = 0 - GameHandler.startingSegmentCount;
+        score1 = 0;
+        score2 = 0;
     }
 }

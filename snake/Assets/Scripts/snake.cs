@@ -94,8 +94,7 @@ public class Snake : MonoBehaviour
         seg.transform.parent = gameObject.transform;
         AddCell(cell);
         lastSegment = cell;
-        tail.Source = lastSegment;
-        
+        tail.Source = lastSegment;      
     }
 
     // Update is called once per frame

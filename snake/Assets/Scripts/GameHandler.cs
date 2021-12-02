@@ -80,6 +80,9 @@ public class GameHandler : MonoBehaviour
         }
     }
 
+
+
+
     public void AddScore(Snake s)
     {
         ScoreManager.AddPoint(snakes.IndexOf(s));
