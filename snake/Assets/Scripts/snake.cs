@@ -126,7 +126,7 @@ public class Snake : MonoBehaviour
         if (isAlive)
         {
             isAlive = false;
-            EndGame.winner = (1 - GameHandler.getSnakeIdx(this));
+            EndGame.winner = (2 - GameHandler.getSnakeIdx(this));
             gameHandler.EndTheGame();
             //head.DestroyGameObject();
             //foreach (Cell c in cells)

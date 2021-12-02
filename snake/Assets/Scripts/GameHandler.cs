@@ -74,7 +74,7 @@ public class GameHandler : MonoBehaviour
         {
             if(snakes[i].segmentCount >= winCon)
             {
-                EndGame.winner = i;
+                EndGame.winner = i+1;
                 EndTheGame();
             }    
         }

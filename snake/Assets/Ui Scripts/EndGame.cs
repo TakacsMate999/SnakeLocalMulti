@@ -11,21 +11,32 @@ public class EndGame : MonoBehaviour
     public GameObject text;
     public static GameHandler gameHandler;
 
-    public void Refresh()
+    /*public void Refresh()
     {
-        text.GetComponent<Text>().text = ("The winner is: " + winner.ToString());
-    }
+        if (text.GetComponent<Text>() != null)
+        {
+            text.GetComponent<Text>().text = ("The winner is: " + winner.ToString());
+        }
+        
+    }*/
 
     void OnEnable()
     {
-        UnitySceneManager.sceneLoaded += OnSceneLoaded;
+        //UnitySceneManager.sceneLoaded += OnSceneLoaded;
+        if (text.GetComponent<Text>() != null)
+        {
+            text.GetComponent<Text>().text = ("The winner is: Player " + winner.ToString());
+        }
     }
 
     // called second
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    /*void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Refresh();
-    }
+        if (text.GetComponent<Text>() != null)
+        {
+            text.GetComponent<Text>().text = ("The winner is: " + winner.ToString());
+        }
+    }*/
 
     public void Restart()
     {
